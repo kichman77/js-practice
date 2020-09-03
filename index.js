@@ -42,5 +42,38 @@
 // let newquestion = `вы любите js?`;
 // let newAnswer =confirm (newquestion);
 
+let num = 10;
+let boolNum = Boolean(num);
+console.log(boolNum);
+num = 0;
+boolNum = Boolean(num);
+console.log(boolNum);
+let str = `Igor`;
+let boolstr = Boolean(str); 
+console.log(boolstr);
+
+str = ``;
+boolstr = Boolean(str);
+console.log(boolstr);
+str = ` `;
+boolstr = Boolean(str);
+console.log(boolstr);
+
+let isOpen;
+console.log(isOpen);
+console.log(typeof isOpen);
+
+let boolUnd = Boolean(isOpen);
+console.log(boolUnd);
+console.log(typeof boolUnd);
+
+isOpen = null;
+console.log(isOpen);
+console.log(typeof isOpen);
+
+let boolNull = Boolean(isOpen);
+console.log(boolNull);
+console.log(typeof boolNull);
+
 
 
