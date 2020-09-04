@@ -138,10 +138,10 @@
 // console.log(ageTotal);
 
 
-let radius = 10;
-let PI = 3.14; 
-const S = PI *(Math.pow(radius, 2 ));
-console.log(S);
+// let radius = 10;
+// let PI = 3.14; 
+// const S = PI *(Math.pow(radius, 2 ));
+// console.log(S);
 
 
 
@@ -149,4 +149,92 @@ console.log(S);
 // let age = 39;
 // const group = 24;
 // console.log(`Я ${name}, мне ${age} лет, я учусь на ${group} буткемпе!!!`)
+
+
+// ============самостоятельный разбор ==========
+// let b = 11;
+// const a = b * 2;
+// console.log(a);
+
+// let age;
+// const myAge = 39;
+// age = myAge;
+// console.log(age);
+
+// let age;
+// console.log(age);
+// age = 14;
+// console.log(age);
+
+// ==== ошибка =====
+// const d = 57;
+// console.log(d);
+
+// const d = 58;
+// console.log(d);
+
+// ======= обращай внимание на сиснтаксические ошибки ====
+// const b = 1155;
+// console.log(b);
+
+// const age = 20;
+// const number = 5.8;
+// console.log(age);
+
+// const war = (number + age)/2;
+// console.log(war);
+
+// const name = 'Mango';
+// console.log(name);
+// const user = 'Orange'
+// console.log(name,user);
+
+// let a;
+// console.log(a);
+
+// const b = null;
+// console.log(typeof null);
+
+// const c = 5;
+// console.log(typeof c);
+
+// const d = 'JavaScript is awesome!'
+// console.log(typeof d);
+
+// const e = false;
+// console.log(typeof e);
+
+// ========== alert and message ======
+
+// const message = 'JavaScript is awesome';
+// console.log(message);
+
+// const name = 'Mango';
+// console.log('My name is', name);
+// alert(name);
+
+// ========= promt and confirm =======
+
+// const isComing = confirm('Piease confirm hotel reservation ');
+// console.log(isComing);
+
+// const hotelName = prompt('Please enter desired  hotel name: ');
+// console.log(hotelName);
+
+
+// const value = prompt('Please enter a number! ');
+// console.log(typeof value );
+// console.log(value);
+
+const x = 5;
+const y = 10;
+console.log(x + y);
+console.log(y - x);
+console.log(y / x);
+console.log(y * x);
+console.log(y % x);
+
+let valeu = 5;
+valeu += 10;
+console.log(valeu);
 
