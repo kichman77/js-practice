@@ -113,8 +113,6 @@
 // а теперь максимальное число если функция принимает неограниченое к-во аргументов
 // const max = function () {}
 
-
-
 // ======================== HW-task 1 ==================================================
 
 // const logItems = function (array) {
@@ -128,7 +126,6 @@
 // logItems([5, 10, 15, 20, 25, 30, 40, 45, 50]);
 
 // logItems([100, `CSS`, `JS`, [`REACT`, `ANGULAR`]]);
-
 
 // ====================================== HW-task 2 ========================================
 
@@ -168,9 +165,7 @@
 //   calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
 // ); // 120
 
-
 // ======================= HW-task 3 =======================================
-
 
 // const findLongestWord = function (string) {
 //   let arrayWord = string.split(' ');
@@ -208,7 +203,6 @@
 
 // console.log(findLongestWord('May the force be with you')); // 'force'
 
-
 // =+++++++++++++++++++++++++++++++++ dop ++++++++++++++++++++++++++++++++++++++++++
 
 // let input;
@@ -234,9 +228,7 @@
 
 // alert(`Общая сумма чисел равна ${total}`);
 
-
 // ======================== HW-task 4 ================================
-
 
 // const formatString = function (string) {
 //   // console.log(string.length);
@@ -244,8 +236,6 @@
 //   //   return string;
 //   // } else {
 //   //   return string = string.slice(0, 40) + '...'
-
-
 
 //   // }
 //   if (string.length <= 40) return string;
@@ -271,7 +261,6 @@
 // );
 // // вернется форматированная строка
 
-
 // ====================== HW-task 5 =====================
 
 // const checkForSpam = function (message) {
@@ -286,7 +275,6 @@
 
 //   // 3-й вариант
 //   return (message.includes('spam') || message.includes('sale')) ? true :  false;
-
 
 // };
 
@@ -333,4 +321,39 @@
 // console.log(numbers);
 // console.log(`Общая сумма чисел равна ${total}`);
 
+// ======================== HW-task 7 =============================================
 
+const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
+
+const isLoginValid = function (login) {
+  if (login.length >= 4 && login.length <= 16) return true;
+  return false;
+};
+
+const isLoginUnique = function (allLogins, login) {
+  for (let loginElem of allLogins) {
+    if (loginElem === login) return false;
+  }
+  return true;
+};
+
+const addLogin = function (allLogins, login) {
+  // if (!isLoginValid(login)) {
+  //   return "Ошибка! Логин должен быть от 4 до 16 символов";
+  // } else {
+  //   if (!isLoginUnique(allLogins,login)) return "Такой логин уже используется!";
+  //     allLogins.push(login);
+  //     return "Логин успешно добавлен!";
+  // }
+  if (!isLoginValid(login)) return "Ошибка! Логин должен быть от 4 до 16 символов";
+  if (!isLoginUnique(allLogins, login)) return "Такой логин уже используется!";
+  allLogins.push(login);
+  return "Логин успешно добавлен!";
+};
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(addLogin(logins, "Ajax")); // 'Логин успешно добавлен!'
+console.log(addLogin(logins, "robotGoogles")); // 'Такой логин уже используется!'
+console.log(addLogin(logins, "Zod")); // 'Ошибка! Логин должен быть от 4 до 16 символов'
+console.log(addLogin(logins, "jqueryisextremelyfast")); // 'Ошибка! Логин должен быть от 4 до 16 символов'
