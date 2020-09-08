@@ -160,16 +160,74 @@
 
 
 
+// ===================== просмотр видео ============================
+
+// const add = function (a, b) {
+//   console.log('a :', a);
+//   console.log('b :', b);
 
 
 
+//   const result = a + b;
+
+// return result
+//    console.log(result);
+// }
+// const r1 = add (2, 5);
+// console.log(r1);
+// const r2 = add (20, 50);
+// console.log(r2);
+// const r3 = add (200, 500);
+// console.log(r3);
+
+// const friends = ['Mango', 'Kiwi', 'Poly','Ajax'];
+
+// const numbers = [1, 2, 3, 4, 5]
+
+// const logItems = function (items) {
+//   for (const  item of items) {
+//     console.log(item);
+//   }
+// };
+
+// logItems(friends);
+// logItems(numbers);
+
+// const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
+// const nameToFriend1 = 'Poly';
+
+// const findFriend = function (allFriends, name) {
+//   console.log('allFriends:', allFriends);
+//   console.log('name', name);
+
+//   for (const friend of allFriends) {
+//     if (name === friend) {
+//       return 'Нашли такого друга';
+//     }
+//   }
+//   return 'Не нашли';
+// };
+// const r1 = findFriend(friends, 'Poly');
+// console.log(r1);
+// const r2 = findFriend(friends, 'Chelsy');
+// console.log(r2);
 
 
+// ----------------------
 
+const title = 'Top 10 benefits of React framework';
+const words = title.toLowerCase().split(' ');
+const slug = words.join('-');
 
+const slugify = function (string) {
+  const words = string.toLowerCase().split(' ');
+  const slug = words.join('-');
 
+  return slug;
+}
 
-
+const slug1 = slugify('Top 10 benefits of React framework');
+console.log(slug1);
 
 
 
