@@ -196,114 +196,114 @@
 //   }),
 // ); // lux
 
-// ------------------- task 4 -----------------------------
+------------------- task 4 -----------------------------
 
-// const countTotalSalary = function (employees) {
-//  // const arr = Object.values(employees);
-//  // console.log(arr);
-//   let total = 0;
-//   for (let elem of Object.values(employees)) {
-//     total += elem;
-//   }
-//   return total
-// };
+const countTotalSalary = function (employees) {
+ // const arr = Object.values(employees);
+ // console.log(arr);
+  let total = 0;
+  for (let elem of Object.values(employees)) {
+    total += elem;
+  }
+  return total
+};
 
-// /*
-//  * Вызовы функции для проверки работоспособности твоей реализации.
-//  */
-// console.log(countTotalSalary({})); // 0
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(countTotalSalary({})); // 0
 
-// console.log(
-//   countTotalSalary({
-//     mango: 100,
-//     poly: 150,
-//     alfred: 80,
-//   }),
-// ); // 330
+console.log(
+  countTotalSalary({
+    mango: 100,
+    poly: 150,
+    alfred: 80,
+  }),
+); // 330
 
-// console.log(
-//   countTotalSalary({
-//     kiwi: 200,
-//     lux: 50,
-//     chelsy: 150,
-//   }),
-// ); // 400
-
-
-// -------------------------------- task 5 -----------------------------
+console.log(
+  countTotalSalary({
+    kiwi: 200,
+    lux: 50,
+    chelsy: 150,
+  }),
+); // 400
 
 
-
-// const products = [
-//   { name: 'Радар', price: 1300, quantity: 4 },
-//   { name: 'Сканер', price: 2700, quantity: 3 },
-//   { name: 'Дроид', price: 400, quantity: 7 },
-//   { name: 'Захват', price: 1200, quantity: 2 },
-// ];
-
-// const getAllPropValues = function (arr, prop) {
-//   let array = [];
-
-//   for (let obj of arr) {
-//    // console.log(obj);
-//     for (let  key in obj) {
-//     //  console.log(key);
-//       if (key === prop) {
-//     //    console.log(obj[key]);
-//         array.push(obj[key]);
-
-//       }
-//     }
-//   }
-//   return array
-// };
-
-// /*
-//  * Вызовы функции для проверки работоспособности твоей реализации.
-//  */
-// console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер', 'Дроид', 'Захват']
-
-// console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
-
-// console.log(getAllPropValues(products, 'category')); // []
+-------------------------------- task 5 -----------------------------
 
 
 
-// ---------------------------- task 6 ---------------------------------
+const products = [
+  { name: 'Радар', price: 1300, quantity: 4 },
+  { name: 'Сканер', price: 2700, quantity: 3 },
+  { name: 'Дроид', price: 400, quantity: 7 },
+  { name: 'Захват', price: 1200, quantity: 2 },
+];
 
-// const products = [
-//   { name: 'Радар', price: 1300, quantity: 4 },
-//   { name: 'Сканер', price: 2700, quantity: 3 },
-//   { name: 'Дроид', price: 400, quantity: 7 },
-//   { name: 'Захват', price: 1200, quantity: 2 },
-// ];
+const getAllPropValues = function (arr, prop) {
+  let array = [];
 
-// const calculateTotalPrice = function (allProducts, productName) {
-//  // console.log(allProducts, productName);
+  for (let obj of arr) {
+   // console.log(obj);
+    for (let  key in obj) {
+    //  console.log(key);
+      if (key === prop) {
+    //    console.log(obj[key]);
+        array.push(obj[key]);
 
-//   for (let obj of allProducts) {
-//   // console.log(obj);
-//     for (let key in obj) {
-//     //  console.log(key);
+      }
+    }
+  }
+  return array
+};
 
-//       if (obj[key] === productName) {
-//        // console.log(obj.price * obj.quantity);
-//         return (obj.price * obj.quantity);
-//       }
-//     }
-//   }
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер', 'Дроид', 'Захват']
 
-// };
+console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
 
-// /*
-//  * Вызовы функции для проверки работоспособности твоей реализации.
-//  */
-// console.log(calculateTotalPrice(products, 'Радар')); // 5200
-
-// console.log(calculateTotalPrice(products, 'Дроид')); // 2800
+console.log(getAllPropValues(products, 'category')); // []
 
 
-// ----------------------- task 7 ------------------------------
+
+---------------------------- task 6 ---------------------------------
+
+const products = [
+  { name: 'Радар', price: 1300, quantity: 4 },
+  { name: 'Сканер', price: 2700, quantity: 3 },
+  { name: 'Дроид', price: 400, quantity: 7 },
+  { name: 'Захват', price: 1200, quantity: 2 },
+];
+
+const calculateTotalPrice = function (allProducts, productName) {
+ // console.log(allProducts, productName);
+
+  for (let obj of allProducts) {
+  // console.log(obj);
+    for (let key in obj) {
+    //  console.log(key);
+
+      if (obj[key] === productName) {
+       // console.log(obj.price * obj.quantity);
+        return (obj.price * obj.quantity);
+      }
+    }
+  }
+
+};
+
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(calculateTotalPrice(products, 'Радар')); // 5200
+
+console.log(calculateTotalPrice(products, 'Дроид')); // 2800
+
+
+----------------------- task 7 ------------------------------
 
 /*
  * Типов транзацкий всего два.
