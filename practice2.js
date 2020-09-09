@@ -215,19 +215,19 @@
 
 // ----------------------
 
-const title = 'Top 10 benefits of React framework';
-const words = title.toLowerCase().split(' ');
-const slug = words.join('-');
+// const title = 'Top 10 benefits of React framework';
+// const words = title.toLowerCase().split(' ');
+// const slug = words.join('-');
 
-const slugify = function (string) {
-  const words = string.toLowerCase().split(' ');
-  const slug = words.join('-');
+// const slugify = function (string) {
+//   const words = string.toLowerCase().split(' ');
+//   const slug = words.join('-');
 
-  return slug;
-}
+//   return slug;
+// }
 
-const slug1 = slugify('Top 10 benefits of React framework');
-console.log(slug1);
+// const slug1 = slugify('Top 10 benefits of React framework');
+// console.log(slug1);
 
 
 
