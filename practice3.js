@@ -93,108 +93,108 @@
 
 
 
-// ============================== HW-3 =================================================
+============================== HW-3 =================================================
 
-// ------------------------------ task - 1 -------------------------------------------
+------------------------------ task - 1 -------------------------------------------
 
-// const user = {
-//   name: 'Mango',
-//   age: 20,
-//   hobby: 'html',
-//   premium: true,
-// };
+const user = {
+  name: 'Mango',
+  age: 20,
+  hobby: 'html',
+  premium: true,
+};
 
-// user.mood = 'happy';
-// console.log(user);
-// user.hobby = 'skydiving';
-// user.premium = false;
-// console.log(user);
+user.mood = 'happy';
+console.log(user);
+user.hobby = 'skydiving';
+user.premium = false;
+console.log(user);
 
-// let keys = (Object.keys(user));
-// console.log(keys);
+let keys = (Object.keys(user));
+console.log(keys);
 
-// for (let key of keys) {
-//   console.log(`${key}: ${user[key]}`);
-// };
+for (let key of keys) {
+  console.log(`${key}: ${user[key]}`);
+};
 
-// ---------------------------- task 2 -------------------------------------
-
-
-// const countProps = function (obj) {
-//   const array = Object.keys(obj);
-//   console.log(array);
-//   const array2 = Object.values(obj);
-//   console.log(array2);
-//   // return array.length, array2.length
-
-// };
-
-// /*
-//  * Вызовы функции для проверки работоспособности твоей реализации.
-//  */
-// console.log(countProps({})); // 0
-
-// console.log(countProps({ name: 'Mango', age: 2 })); // 2
-
-// console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
+---------------------------- task 2 -------------------------------------
 
 
-// ------------------ task 3 -------------------------------
+const countProps = function (obj) {
+  const array = Object.keys(obj);
+  console.log(array);
+  const array2 = Object.values(obj);
+  console.log(array2);
+  // return array.length, array2.length
+
+};
+
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(countProps({})); // 0
+
+console.log(countProps({ name: 'Mango', age: 2 })); // 2
+
+console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
 
 
-// const findBestEmployee = function (employees) {
-//   const array = Object.entries(employees);
-//   let bestName = array[0][0];
-//   let bestScore = array[0][1];
-//  // console.log(bestName, bestScore);
+------------------ task 3 -------------------------------
 
-//   for (let i = 1; i < array.length; i += 1) {
-//    // console.log(array[i]);
-//     const innerArray = array[i];
-//    // console.log(innerArray);
-//     let name = innerArray[0];
-//    // console.log(name);
-//     let score = innerArray[1];
-//    // console.log(score);
-//     if (bestScore < score) {
-//       bestScore = score;
-//       bestName = name;
-//      // console.log(bestScore, bestName);
-//     }
 
-//   }
-//   return bestName;
+const findBestEmployee = function (employees) {
+  const array = Object.entries(employees);
+  let bestName = array[0][0];
+  let bestScore = array[0][1];
+ // console.log(bestName, bestScore);
 
-// };
+  for (let i = 1; i < array.length; i += 1) {
+   // console.log(array[i]);
+    const innerArray = array[i];
+   // console.log(innerArray);
+    let name = innerArray[0];
+   // console.log(name);
+    let score = innerArray[1];
+   // console.log(score);
+    if (bestScore < score) {
+      bestScore = score;
+      bestName = name;
+     // console.log(bestScore, bestName);
+    }
 
-// /*
-//  * Вызовы функции для проверки работоспособности твоей реализации.
-//  */
-// console.log(
-//   findBestEmployee({
-//     ann: 29,
-//     david: 35,
-//     helen: 1,
-//     lorence: 99,
-//   }),
-// ); // lorence
+  }
+  return bestName;
 
-// console.log(
-//   findBestEmployee({
-//     poly: 12,
-//     mango: 17,
-//     ajax: 4,
-//   }),
-// ); // mango
+};
 
-// console.log(
-//   findBestEmployee({
-//     lux: 147,
-//     david: 21,
-//     kiwi: 19,
-//     chelsy: 38,
-//   }),
-// ); // lux
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(
+  findBestEmployee({
+    ann: 29,
+    david: 35,
+    helen: 1,
+    lorence: 99,
+  }),
+); // lorence
+
+console.log(
+  findBestEmployee({
+    poly: 12,
+    mango: 17,
+    ajax: 4,
+  }),
+); // mango
+
+console.log(
+  findBestEmployee({
+    lux: 147,
+    david: 21,
+    kiwi: 19,
+    chelsy: 38,
+  }),
+); // lux
 
 ------------------- task 4 -----------------------------
 
