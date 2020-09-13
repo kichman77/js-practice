@@ -553,3 +553,167 @@
 // console.log(hotel.capacity);
 
 
+// ------------------- for in -----------------------------------
+
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capasity: 100,
+// };
+// for (const key in hotel) {
+//   console.log('key :', key);
+// }
+
+// const hotel = {
+//   name: "Resort Hotel",
+//   stars: 5,
+//   capasity: 100,
+// };
+
+// for (const key in hotel) {
+//   console.log('Value', hotel[key]);
+// }
+
+// ---------------Object.keys(), Object.values(), Object.entries();----------
+
+// const hotel = {
+//   name: "Resort Hotel",
+//   stars: 5,
+//   capacity: 100,
+// };
+// //console.log(hotel);
+
+// const keys = Object.keys(hotel);
+// for (const key of keys) {
+//    console.log(key);
+//  }
+
+
+// const values = Object.values(hotel);
+
+// for (const value of values) {
+//   console.log(value);
+// }
+// const entries = Object.entries(hotel);
+
+// //console.log(entries);
+
+// for (const entry of entries) {
+//   const key = entry[0];
+//   const value = entry[1];
+
+//   console.log(`${key} ${value}`);
+// }
+
+
+
+
+// const goods = {
+//   apples: 6,
+//   grapes: 3,
+//   bread: 4,
+//   chees: 7,
+
+// };
+
+// const values = Object.values(goods);
+// //console.log(values);
+// let total = 0;
+
+// for (const value of values) {
+//   //console.log(value);
+//   total += value;
+
+// }
+// console.log(total);
+
+
+
+// ------------------------------ spread -------------------------------
+
+// const temperatures = [18, 14, 12, 21, 17, 29];
+// const min = Math.min(...temperatures);
+// console.log(min);
+
+// const houses = ['Arryn', 'Frey', 'Greyjoy', 'Stark', 'Lannister', 'Tyrell'];
+// const copyOfHouses = [...houses, 'Targaryen'];
+
+// console.log(houses);
+// console.log(copyOfHouses);
+// console.log(houses === copyOfHouses);
+
+// const firstBatch = ["Arryn", "Frey", "Greyjoy"];
+// const secondBatch = ["Stark", "Lannister", "Tyrell"];
+
+// const houses = [...firstBatch, ...secondBatch];
+// console.log(houses);
+
+// const houses = ["Arryn", "Frey", "Greyjoy", "Stark", "Lannister", "Tyrell"];
+// console.log(houses);
+// const housesInDebt = [...houses.slice(0, 4), ...houses.slice(5)];
+
+// console.log(housesInDebt);
+
+
+// const houses = ["Arryn", "Frey", "Greyjoy", "Stark", "Lannister", "Tyrell"];
+
+
+// const updatedHouses = [...houses.slice(0, 1), "Frey of the Crossing", ...houses.slice(2)];
+
+// console.log(updatedHouses);
+
+// const a = { x: 1, y: 2 };
+// const b = { x: 0, z: 3 }; //???????????????
+
+// const c = Object.assign({}, a, b);
+// console.log(c);
+
+// ------------------------------ rest ---------------------------------
+
+// const add = function (...args) {
+//   console.log(args);
+// };
+// add(1, 2, 3, 4 , 5)
+
+
+// const add = function (value, ...args) {
+//   console.log(value);
+// }
+// add(10, 1, 2, 3);
+// add(15, 2 , 3 , 4 , 5 , 6 , 7)
+
+// -------------------------- деструктуризация объектов -----------------------
+
+// const hotel = {
+//   name: "Resort Hotel",
+//   stars: 5,
+//   capacity: 100,
+// };
+// const { name, stars, status } = hotel;
+
+// console.log(name, stars, status);
+
+// const hotel = {
+//   name: "Resort Hotel",
+//   stars: 5,
+//   capacity: 100,
+// };
+// const { name = "hotel", stars = 3, status = "empty" } = hotel;
+// console.log(name, stars, status);
+
+// const { name: hotelName, stars, status: hotelStatus = 'empty' }= hotel;
+// console.log(hotelName, stars, hotelStatus);
+
+// const { name, ...rest } = hotel;
+// console.log(name);
+// console.log(rest);
+
+// ------------------- деструктуризация массивов  ----------------------
+
+// const rgb = [200, 255, 100];
+
+// const [red, green, blue] = rgb;
+
+// console.log(`Red: ${red}, Green: ${green}, Blue ${blue}`);
+
