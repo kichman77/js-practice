@@ -1,3 +1,249 @@
+// ============================= Массивы ==============================
+
+// let a = function (a, b, c, d, e) {
+//   const array = Array.from(arguments);
+//   return console.log(array);
+
+// }
+// a(1, 2, 3, 4, 5)
+
+
+// const arr = [];
+// const clients = ['Mango', 'Poly', 'Ajax'];
+// console.log(clients);
+
+// const clients = ["Mango", "Poly", "Ajax"];
+
+// console.log(clients[0]);
+// console.log(clients[1]);
+// console.log(clients[2]);
+
+//можно добавить или заменить элемент массива//
+
+// const clients = ['Mango', 'Poly', 'Ajax'];
+// clients[0] = 'Kiwi';
+// clients[3] = 'Alex';
+// console.log(clients);
+// //console.log(clients[3]);
+
+
+// --------------------------- длинна массива-------------------
+
+// const clients = ['Mango', 'Poly', 'Ajax',' '];
+// //console.log(clients.length);
+
+// clients.length = 5;
+// console.log(clients);
+
+
+// ----------------------------- итерация по массиву -------------------
+//
+
+//----------- перебор массива for   ------------
+
+// const clients = ['Mango', 'Poly', 'Ajax'];
+
+// for (let i = 0; i < clients.length; i += 1) {
+//   console.log('Logging clients :' , clients[i]);
+// }
+
+// --------------- заполнение массива -------------------
+
+// const numbers = [];
+
+// for (let i = 0; i < 3; i += 1) {
+//   numbers.push(`label - ${i}`);
+// }
+// console.log('numbers :', numbers);
+
+// ---------------- for ... of ---------------------
+
+// const clients = ["Mango", "Poly", "Ajax"];
+
+// for (const client of clients) {
+//   console.log(client);
+// }
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// for (const number of numbers) {
+//   console.log(number);
+// }
+
+
+// --------------- break / continue -------------------------------/
+
+// const clients = ['Mango', 'Poly', ' Ajax'];
+// const clientNameToFind = 'Poly';
+
+// let message;
+
+// for (let client of clients) {
+//   if (client === clientNameToFind) {
+//     message = 'Клиент с таким именем в базе данных';
+//     break;
+//   }
+//   message = 'Клиента с таким именем нет в базе данных!';
+
+// }
+// console.log(message);
+
+// const clients = ['Mango', 'Poly', 'Ajax'];
+// const clientNameToFind = 'Poly';
+// let message = 'Клиента с таким именем нет в базе данных!';
+
+// for (const client of clients){
+//   if (client === clientNameToFind) {
+//     message = 'Клиент с таким именем есть в базе данных!';
+//     break;
+//   }
+
+// }
+// console.log(message);
+
+// const numbers = [1, 3, 14, 27, 4, 9, 56, 34, 87];
+// const  threshold = 15;
+
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] < threshold) {
+//     continue;
+//   }
+//   console.log(`Число больше чем ${threshold} : ${numbers[i]}`);
+// }
+
+
+
+
+// ----------------- методы массивов ---------------------------------
+
+// ------------------------ split -----------------------------------
+
+// const message = 'Welcomme to Bahamas!';
+
+// console.log(message.split(' '));
+
+// ------------------------- join --------------------------------
+
+// const clients = ['Mango', 'Poly', 'Ajax'];
+
+// console.log(clients.join(' '));
+// console.log(clients.join('-'));
+// console.log(clients.join(','));
+
+
+// ---------------------------- indexOf() / includes()--------------------
+
+// const clients = ["Mango", "Poly", "Ajax", 'Kiwi'];
+// console.log(clients.indexOf('Ajax'));
+// console.log(clients.indexOf('Mercury'));
+
+// const clients = ["Mango", "Poly", "Ajax", 'Kiwi'];
+// console.log(clients.includes('Poly'));
+// console.log(clients.includes('Mercury'));
+
+
+// const fruit = 'apple';
+
+// if (fruit === 'apple' || fruit === 'strawberry') {
+//   console.log('It is a red fruit!');
+// }
+
+// const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
+
+// if (redFruits.includes(fruit)) {
+//   console.log('It is a red fruit!');
+// }
+
+// --------------------- push () / pop () -------------------------------
+
+// const stack = [];
+// console.log(stack);
+
+// // stack.push(1);
+// console.log(stack);
+
+// stack.push(2);
+// console.log(stack);
+
+// stack.push(3);
+// console.log(stack);
+
+// // -----------------
+
+// stack.pop();
+// console.log(stack);
+
+// stack.pop();
+// console.log(stack);
+
+// stack.pop();
+// console.log(stack);
+
+
+
+// const clients = ['Mango', 'Poly', 'Ajax', 'Mercury'];
+
+// console.log(clients.shift());
+// console.log(clients);
+
+// console.log(clients.shift());
+// console.log(clients);
+
+// console.log(clients.shift());
+// console.log(clients);
+
+// console.log(clients.shift());
+// console.log(clients);
+
+
+// ------------------------- slice--------------------------------
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+
+// console.log(clients.slice(1, 3));
+// console.log(clients.slice(1));
+// console.log(clients.slice());
+// console.log(clients.slice(-2));
+
+// ---------------------- splice () ------------------------------------
+
+// const scores = [1, 2, 3, 4, 5];
+// console.log(scores);
+// const deletedScores = scores.splice(0, 3);
+// console.log(scores);
+// console.log(deletedScores);
+
+
+
+// const colors = ['red', 'green', 'blue'];
+// console.log(colors);
+// colors.splice(2, 0, 'purple');
+// console.log(colors);
+// colors.splice(3, 0, 'yellow', 'pink');
+// console.log(colors);
+
+
+// const lenguages = ['C', 'C++', 'Java', 'JavaScript'];
+// console.log(lenguages);
+
+// lenguages.splice(1, 1, 'Python');
+// console.log(lenguages);
+
+// lenguages.splice(2, 1, 'C#', 'Swift', 'Go');
+// console.log(lenguages);
+
+// ------------------------- concat()-----------------------------
+
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Mokogon', 'Singu'];
+// console.log(oldClients);
+// console.log(newClients);
+
+// const allClients = oldClients.concat(newClients);
+
+// console.log(allClients);
+
+
 //========================= Function ======================
 
 // const add = function (a, b, c) {
@@ -41,14 +287,6 @@
 // console.log(sum(1, 2, 3));
 // console.log(sum(1, 2, 3, 4, 5));
 
-// ---------------------------- создание массива ----------------------------
-
-// let a = function (a, b, c, d, e) {
-//   const array = Array.from(arguments);
-//   return console.log(array);
-
-// }
-// a(1, 2, 3, 4, 5)
 
 // ---------------------- if ... else -----------------------------------------
 
@@ -129,21 +367,189 @@
 
 // --------------------- стрелочные функции ------------------------------
 
+// const add = function (a, b, c) {
+//   return a + b + c;
+// }
+// console.log(add(5, 7, 9));
+
+// const fn = () => {
+//   console.log("Hello! :]");
+// };
+// fn()
+
+
+// const add = (...args) => {
+//   console.log(args);
+// };
+// add()
+
+// let anonim = () => 15 + 98;
+
+
+// console.log(anonim());
+
+// ------------------- Object -------------------------------
+
+// --------------------- создание объекта -----------------
+
+// const hotel = {};
+// console.log(hotel);
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capasity: 100,
+// };
+// console.log(hotel);
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capasity: 100,
+// };
+// console.log(hotel.name);
+// console.log(hotel['name']);
+
+// hotel.name = 'CoastLine Resort';
+// console.log(hotel.name);
+// console.log(hotel['name']);
+
+
+// hotel['name'] = 'Stardust Hotel';
+// console.log(hotel.name);
+// console.log(hotel['name']);
 
 
 
+// const hotel = {
+//   name: "Resort Hotel",
+//   stars: 5,
+//   capasity: 100,
+// };
+// console.log(hotel);
+
+// hotel.address = '1, Beach ava.';
+// hotel['manager'] = 'Chack Norris';
+
+// console.log(hotel.address);
+// console.log(hotel['manager']);
 
 
 
+// ------------------- удаление свойств -------------------------
 
 
+// const hotel = {
+//   name: "Resort Hotel",
+//   stars: 5,
+//   capasity: 100,
+// };
+// console.log(hotel);
+
+// delete hotel.name;
+// console.log(hotel);
+
+// delete hotel.stars;
+// console.log(hotel);
+
+// delete hotel.capasity;
+// console.log(hotel);
 
 
+// --------------------- отсутствующее свойство -----------------
 
 
+// const hotel = {
+//   name: "Resort Hotel",
+//   stars: 5,
+//   capasity: 100,
+//   guests: ['mango', 'poly', 'ajax'],
+// };
+// console.log(hotel);
+// console.log(hotel.pool);
+
+// let name = 'Resort Hotel';
+// let stars = 5;
+
+// const hotel = {
+//   name,
+//   stars,
+//   capacity: 100,
+// };
 
 
+// console.log(hotel);
 
 
+// ------------------ вычисляемые свойства -------------------------
+
+// const key = 'person';
+// const object = {};
+
+// object[key] = 'Mango';
+// console.log(object);
+
+// const key = 'person';
+// const getKey = function () {
+//   return 'age';
+// };
+// const object = {
+//   [key]: 'Mango',
+//   [getKey()]: 2,
+// };
+
+// console.log(object);
+
+// ---------------------- методы объекта ----------------------
+
+
+// const hotel = {
+//   name: "Resort Hotel",
+//   stars: 5,
+//   capacity: 100,
+//   // Так метод объявлялся в ES5
+//   greetInES5: function () {
+//     console.log("Welcome!");
+//   },
+//   // Так метод объявляется в ES6
+//   greetInES6() {
+//     console.log("Welcome!");
+//   },
+// };
+// hotel.greetInES5();
+// hotel.greetInES6();
+
+
+// const hotel = {
+//   name: "Resort Hotel",
+//   stars: 5,
+//   capacity: 100,
+// };
+
+// hotel.greet = function () {
+//   console.log("Welcome!");
+// };
+
+// hotel.greet();
+
+
+// ---------------------- доступ через this -------------------
+
+// const hotel = {
+//   name: 'Resort Hotel',
+//   stars: 5,
+//   capacity: 100,
+//   showName() {
+//     console.log(this.name);
+//   },
+//   changeCapacity(value) {
+//     this.capacity = value;
+//   },
+// };
+
+// hotel.showName();
+
+// hotel.changeCapacity(200);
+// console.log(hotel.capacity);
 
 
