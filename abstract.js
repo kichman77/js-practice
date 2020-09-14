@@ -75,16 +75,16 @@
 
 // Функция обратного вызова(callback) - это функция, которая прередается другой фуннкции вкачестве аргумента и та, в свою очередь, вызывает переданную функцию.
 
-const printMessage = function (message) {
-  console.log(message);
-};
+// const printMessage = function (message) {
+//   console.log(message);
+// };
 
-const higherOrderFunction = function(callback) {
-  const string = 'HOCs are awesome';
-  callback(string);
-};
+// const higherOrderFunction = function(callback) {
+//   const string = 'HOCs are awesome';
+//   callback(string);
+// };
 
-higherOrderFunction(printMessage);
+// higherOrderFunction(printMessage);
 
 // ----------------- абстракция --------------------------
 
@@ -92,10 +92,10 @@ higherOrderFunction(printMessage);
 //   console.log(i);
 // }
 
-const repeatLog = function (n) {
-  for (let i = 0; i < n; i += 1) {
-    console.log(i);
-  }
-};
+// const repeatLog = function (n) {
+//   for (let i = 0; i < n; i += 1) {
+//     console.log(i);
+//   }
+// };
 
-repeatLog(5);
+// repeatLog(5);
