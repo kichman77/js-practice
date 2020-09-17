@@ -7,7 +7,6 @@
 // }
 // a(1, 2, 3, 4, 5)
 
-
 // const arr = [];
 // const clients = ['Mango', 'Poly', 'Ajax'];
 // console.log(clients);
@@ -26,7 +25,6 @@
 // console.log(clients);
 // //console.log(clients[3]);
 
-
 // --------------------------- длинна массива-------------------
 
 // const clients = ['Mango', 'Poly', 'Ajax',' '];
@@ -34,7 +32,6 @@
 
 // clients.length = 5;
 // console.log(clients);
-
 
 // ----------------------------- итерация по массиву -------------------
 //
@@ -69,7 +66,6 @@
 // for (const number of numbers) {
 //   console.log(number);
 // }
-
 
 // --------------- break / continue -------------------------------/
 
@@ -111,9 +107,6 @@
 //   console.log(`Число больше чем ${threshold} : ${numbers[i]}`);
 // }
 
-
-
-
 // ----------------- методы массивов ---------------------------------
 
 // ------------------------ split -----------------------------------
@@ -132,7 +125,6 @@
 // console.log(clients.join('-'));
 // console.log(clients.join(','));
 
-
 // ---------------------------- indexOf() / includes()--------------------
 // возвращает, если есть: индекс элемента / true
 //                                     -1 / false
@@ -144,7 +136,6 @@
 // const clients = ["Mango", "Poly", "Ajax", 'Kiwi'];
 // console.log(clients.includes('Poly'));
 // console.log(clients.includes('Mercury'));
-
 
 // const fruit = 'apple';
 
@@ -183,8 +174,6 @@
 // stack.pop();
 // console.log(stack);
 
-
-
 // const clients = ['Mango', 'Poly', 'Ajax', 'Mercury'];
 
 // console.log(clients.shift());
@@ -198,7 +187,6 @@
 
 // console.log(clients.shift());
 // console.log(clients);
-
 
 // ------------------------- slice--------------------------------
 
@@ -217,15 +205,12 @@
 // console.log(scores);
 // console.log(deletedScores);
 
-
-
 // const colors = ['red', 'green', 'blue'];
 // console.log(colors);
 // colors.splice(2, 0, 'purple');
 // console.log(colors);
 // colors.splice(3, 0, 'yellow', 'pink');
 // console.log(colors);
-
 
 // const lenguages = ['C', 'C++', 'Java', 'JavaScript'];
 // console.log(lenguages);
@@ -246,7 +231,6 @@
 // const allClients = oldClients.concat(newClients);
 
 // console.log(allClients);
-
 
 //========================= Function ======================
 
@@ -290,7 +274,6 @@
 
 // console.log(sum(1, 2, 3));
 // console.log(sum(1, 2, 3, 4, 5));
-
 
 // ---------------------- if ... else -----------------------------------------
 
@@ -368,7 +351,6 @@
 // };
 // console.log(add(value));
 
-
 // --------------------- стрелочные функции ------------------------------
 
 // const add = function (a, b, c) {
@@ -381,14 +363,12 @@
 // };
 // fn()
 
-
 // const add = (...args) => {
 //   console.log(args);
 // };
 // add()
 
 // let anonim = () => 15 + 98;
-
 
 // console.log(anonim());
 
@@ -418,12 +398,9 @@
 // console.log(hotel.name);
 // console.log(hotel['name']);
 
-
 // hotel['name'] = 'Stardust Hotel';
 // console.log(hotel.name);
 // console.log(hotel['name']);
-
-
 
 // const hotel = {
 //   name: "Resort Hotel",
@@ -438,10 +415,7 @@
 // console.log(hotel.address);
 // console.log(hotel['manager']);
 
-
-
 // ------------------- удаление свойств -------------------------
-
 
 // const hotel = {
 //   name: "Resort Hotel",
@@ -459,9 +433,7 @@
 // delete hotel.capasity;
 // console.log(hotel);
 
-
 // --------------------- отсутствующее свойство -----------------
-
 
 // const hotel = {
 //   name: "Resort Hotel",
@@ -481,9 +453,7 @@
 //   capacity: 100,
 // };
 
-
 // console.log(hotel);
-
 
 // ------------------ вычисляемые свойства -------------------------
 
@@ -506,7 +476,6 @@
 
 // ---------------------- методы объекта ----------------------
 
-
 // const hotel = {
 //   name: "Resort Hotel",
 //   stars: 5,
@@ -523,7 +492,6 @@
 // hotel.greetInES5();
 // hotel.greetInES6();
 
-
 // const hotel = {
 //   name: "Resort Hotel",
 //   stars: 5,
@@ -535,7 +503,6 @@
 // };
 
 // hotel.greet();
-
 
 // ---------------------- доступ через this -------------------
 
@@ -556,9 +523,7 @@
 // hotel.changeCapacity(200);
 // console.log(hotel.capacity);
 
-
 // ------------------- for in -----------------------------------
-
 
 // const hotel = {
 //   name: 'Resort Hotel',
@@ -593,7 +558,6 @@
 //    console.log(key);
 //  }
 
-
 // const values = Object.values(hotel);
 
 // for (const value of values) {
@@ -609,9 +573,6 @@
 
 //   console.log(`${key} ${value}`);
 // }
-
-
-
 
 // const goods = {
 //   apples: 6,
@@ -631,8 +592,6 @@
 
 // }
 // console.log(total);
-
-
 
 // ------------------------------ spread -------------------------------
 
@@ -659,9 +618,7 @@
 
 // console.log(housesInDebt);
 
-
 // const houses = ["Arryn", "Frey", "Greyjoy", "Stark", "Lannister", "Tyrell"];
-
 
 // const updatedHouses = [...houses.slice(0, 1), "Frey of the Crossing", ...houses.slice(2)];
 
@@ -679,7 +636,6 @@
 //   console.log(args);
 // };
 // add(1, 2, 3, 4 , 5)
-
 
 // const add = function (value, ...args) {
 //   console.log(value);
@@ -721,7 +677,6 @@
 
 // console.log(`Red: ${red}, Green: ${green}, Blue ${blue}`);
 
-
 // ------------------ Функции обратного вызова ----------------------------
 
 // const printMessage = function (message) {
@@ -734,21 +689,10 @@
 // }
 // higherOrderFunction(printMessage);
 
-
-
-
 // ========================================================================
 // ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // ========================================================================
-
-
-
-
-
-
-
-
 
 // 1
 // Объяви две переменные хранящие имя пользователя и сообщение приветствия: userName и greeting
@@ -758,7 +702,6 @@
 // let userName = prompt('Введите имя')
 // let greeting = 'Hello'
 // console.log(`${userName}, ${greeting}`);
-
 
 // 2
 // ============== 1 ====================================
@@ -794,7 +737,6 @@
 // console.log(undefined == null);// true
 // console.log(undefined == false);// false
 // console.log(undefined == true);// false
-
 
 // ============== 2 ====================================
 
@@ -838,7 +780,6 @@
 // console.log(isNaN(val)); // false
 // console.log(typeof val);
 
-
 // ============== 3 ====================================
 // объяви две переменные alfa и beta со значениями 0.2 и 0.4
 // запиши результат суммы этих переменных так, чтобы получилось 0.6 в переменную result
@@ -856,7 +797,6 @@
 // console.log(result);
 // console.log(typeof result);
 
-
 // ============== 4 ====================================
 
 // объяви переменную tetra
@@ -868,14 +808,22 @@
 // tetra = 13.34 + 'em';
 // console.log(tetra);
 
-
 // |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 // ============== 5 ====================================
 
 // выведи в консоль наибольшее и наименьшее число из указанных (2, 34, 99, 3, 22, 36, 733, 18)
 
+// let nambers = function (...num) {
+//   console.log(num);
+//   let el = 0;
+//   let max = Math.max(...num)
+//   console.log(max);
+//   let min = Math.min(...num)
+//   console.log(min);
 
+// };
+// nambers(2, 34, 99, 3, 22, 36, 733, 18);
 
 // ============== 6* ===================================
 
@@ -885,7 +833,18 @@
 
 // выведи результат в консоль
 
-// 3
+// Math.random()*(max - min)+min
+// let number = Math.ceil(Math.random()*(7-5)+5);
+// console.log(number);
+
+// let random = Math.ceil(Math.random() * (10 - 1) + 1);
+// console.log(random);
+
+// let num = Math.ceil(Math.random() * (15 - 3) + 3);
+// console.log(num);
+
+// let n = Math.ceil(Math.random() * (6 - 0) + 0);
+// console.log(n);
 // ============== 1 ====================================
 
 // Создай массив fruits с элементами: яблоки, бананы, апельсины.
@@ -902,7 +861,20 @@
 
 // Выведи массив в консоль и убедись, что элементы добавлены
 
+// let fruits = ["apples", "bananas", "orange"];
+// console.log(fruits);
+// console.log(fruits[1]);
+// fruits[1] = "kiwi";
+// console.log(fruits);
 
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+
+// fruits[3] = 'pears';
+// fruits[4] = 'grapes';
+// fruits[5] = 'peaches';
+// console.log(fruits);
 
 // ============== 2 ====================================
 
@@ -912,7 +884,16 @@
 
 // С помощью цикла со счетчиком for выведи в консоль только те значения, которые могут быть зачтены, т.е. они должны быть больше 12, это значение должно храниться в переменной score1
 
-
+// const test1 = [4, 12, 6, 16, 13, 8, 13, 4, 15, 11, 14, 10, 15, 12];
+// console.log(test1);
+// let score1 = 12;
+// for (let i = 0; i < test1.length; i++) {
+//  // console.log(test1[i]);
+//   if (test1[i] < score1) {
+//     continue;
+//   }
+//   console.log(test1[i]);
+// }
 
 // ============== 3 ====================================
 
@@ -921,9 +902,16 @@
 // 17, 13, 4, 15, 10, 12, 16, 21, 13, 8, 14, 18, 15, 20
 
 // С помощью цикла со счетчиком for выведи в консоль только те значения, которые могут быть зачтены, т.е. они должны быть больше 15, это значение должно храниться в переменной score2
-
-
-
+// const test2 = [17, 13, 4, 15, 10, 12, 16, 21, 13, 8, 14, 18, 15, 20];
+// console.log(test2);
+// let score2 = 15;
+// for (let i = 0; i < test2.length; i++){
+//  // console.log(test2[i]);
+//   if (test2[i] < score2) {
+//     continue
+//   }
+//   console.log(test2[i]);
+// }
 // ============== 4 ====================================
 
 // Создай массив test3, который содержит результаты тестов студентов:
@@ -931,9 +919,18 @@
 // 20, 12, 16, 22, 13, 8, 13, 4, 15, 10, 14, 18, 15, 22
 
 // С помощью цикла со счетчиком for выведи в консоль только те значения, которые могут быть зачтены, т.е. они должны быть больше 16, это значение должно храниться в переменной score3
+// const test3 = [20, 12, 16, 22, 13, 8, 13, 4, 15, 10, 14, 18, 15, 22];
+// console.log(test3);
+// const score3 = 16;
+// for (let i = 0; i < test3.length; i++){
+// //  console.log(test3[i]);
+//   if (test3[i] < score3) {
+//     continue
+//   }
+//   console.log(test3[i]);
+// }
 
-
-
+// ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 // ============== 5 ====================================
 
 // Создай многомерный массив tests, который содержит 3 вложенных массива, с результатами трех тестов студентов:
@@ -946,7 +943,14 @@
 
 // Выведи в консоль все три вложенных массива с помощью цикла for
 
-
+// const test = [
+//   [4, 12, 6, 16, 13, 8, 13, 4, 15, 11, 14, 10, 15, 12],
+//   [17, 13, 4, 15, 10, 12, 16, 21, 13, 8, 14, 18, 15, 20],
+//   [20, 12, 16, 22, 13, 8, 13, 4, 15, 10, 14, 18, 15, 22],
+// ];
+// for (let i = 0; i < test.length; i++){
+//   console.log(test[i]);
+// }
 
 // 4
 // ============== 1 ===============================================
@@ -964,8 +968,22 @@
 // Charles Dickens, Edgar Allan Poe, Gabriel Garcia Marquez
 
 // Выведи обновленный массив в консоль. В комментарии после команды консоль укажи количество элементов измененного массива
-
-
+// const authors = [
+//   "William Shakespeare",
+//   "Guy de Maupassant",
+//   "Dante Alighieri",
+//   "Mikhail Bulgakov",
+//   "Albert Camus ",
+//   "Erich Maria Remarque",
+// ];
+// console.log(authors);
+// authors.push("Honore de Balzac", "Miguel de Cervantes", "Anton Chekhov");
+// console.log(authors);
+// authors.unshift("Charles Dickens", "Edgar Allan Poe", "Gabriel Garcia Marquez");
+// console.log(authors);
+// for (let i = 0; i < authors.length; i++) {
+//   console.log(authors[i]);
+// }
 
 // ============== 2 ===============================================
 
@@ -977,7 +995,15 @@
 
 // Выведи результат в консоль
 
-
+// const scores = [12, 32, 15, 17, 3, 4, 98, 67, 532, 611, 7, 100, 42];
+// //for (let i = 0; i < scores.length; i++){
+// console.log(scores);
+// scores.shift();
+// scores.shift();
+// scores.pop();
+// scores.pop();
+// scores.pop();
+// console.log(scores);
 
 // ============== 3 ===============================================
 
@@ -990,23 +1016,27 @@
 // в отдельные массивы removeFromStart и removeFromEnd
 
 // Выведи в консоль все массивы
+// const results = [12, 32, 15, 17, 3, 4, 98, 67, 532, 611, 7, 100, 42];
+// console.log(results);
+// const removeFromStart = results.splice(0, 2);
+// console.log(removeFromStart);
+// const removeFromEnd = results.splice(8, 3);
+// console.log(removeFromEnd);
 
+// // ============== 4 ===============================================
 
+// // Создай массив partOfResults и скопируй в него элементы от 3 до 532 включительно
 
-// ============== 4 ===============================================
+// // из измененного массива results из задания 3 (т.е. все задание 3 и массив results должны быть раскомментированы)
+// const partOfResults = results.slice(2, 7);
+// console.log(partOfResults);
 
-// Создай массив partOfResults и скопируй в него элементы от 3 до 532 включительно
-
-// из измененного массива results из задания 3 (т.е. все задание 3 и массив results должны быть раскомментированы)
-
-
-
-// ============== 5 ===============================================
-
+// // ============== 5 ===============================================
+// const doubleResults = results;
+// console.log(doubleResults);
 // Создай массив doubleResults и скопируй в него все элементы из измененного массива results из задания 3
-
-
-
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // ============== 6 ===============================================
 
 // Перебери массив doubleResults из задания 5
@@ -1018,8 +1048,6 @@
 // В обратной последовательности в обоих случаях
 
 // Выведи в консоль массивы evenResults и oddResults
-
-
 
 // ============== 7 ===============================================
 
@@ -1046,25 +1074,17 @@
 
 // убедись, что функция выполнилась при любом ее выражении
 
-
-
 // FUNCTION EXPRESSION
 
 // тут объяви функцию как FUNCTION EXPRESSION
-
-
 
 // ARROW FUNCTION
 
 // тут объяви функцию как ARROW FUNCTION
 
-
-
 // вызов функции
 
 // тут вызывай функцию
-
-
 
 // ============== 2 ===========================
 
@@ -1090,19 +1110,13 @@
 
 // тут объяви функцию как FUNCTION EXPRESSION
 
-
-
 // ARROW FUNCTION
 
 // тут объяви функцию как ARROW FUNCTION
 
-
-
 // вызов функции
 
 // тут вызывай функцию
-
-
 
 // ============== 3 ===========================
 
@@ -1120,25 +1134,17 @@
 
 // убедись, что функция выполнилась при любом ее выражении
 
-
-
 // FUNCTION EXPRESSION
 
 // тут объяви функцию как FUNCTION EXPRESSION
-
-
 
 // ARROW FUNCTION
 
 // тут объяви функцию как ARROW FUNCTION
 
-
-
 // вызов функции
 
 // используй эти консоли для проверки своего кода
-
-
 
 // console.log(toGetCost("To be, or not to be, that is the question", 10)); // 100
 
@@ -1147,8 +1153,6 @@
 // console.log(toGetCost("The slings and arrows of outrageous fortune,", 40)); // 280
 
 // console.log(toGetCost("Or to take arms against a sea of troubles", 20)); // 180
-
-
 
 // ============== 4 ===========================
 
@@ -1168,11 +1172,7 @@
 
 // const array = ['Mango', 'Banana', 'Ajax'];
 
-
-
 // // FUNCTION EXPRESSION
-
-
 
 // Вызовы функции для проверки кода
 
@@ -1194,96 +1194,76 @@
 
 //   logItems([10, 20, 30, 40, 50, 60, 70, 80, 90, 100]);
 
+// ============== 5 ===========================
 
+// Напиши функцию checkTheWord(message) как FUNCTION EXPRESSION и как ARROW FUNCTION,
 
-  // ============== 5 ===========================
+// принимающую 1 параметр message - строку.
 
-  // Напиши функцию checkTheWord(message) как FUNCTION EXPRESSION и как ARROW FUNCTION,
+// Функция проверяет ее на содержание слов lose и not. Если нашли запрещенное слово
 
-  // принимающую 1 параметр message - строку.
+// то функция возвращает true, если запрещенных слов нет функция возвращает false.
 
-  // Функция проверяет ее на содержание слов lose и not. Если нашли запрещенное слово
+// Слова в строке могут быть в произвольном регистре.
 
-  // то функция возвращает true, если запрещенных слов нет функция возвращает false.
+// FUNCTION EXPRESSION
 
-  // Слова в строке могут быть в произвольном регистре.
+// тут объяви функцию как FUNCTION EXPRESSION
 
+// ARROW FUNCTION
 
+// тут объяви функцию как ARROW FUNCTION
 
-  // FUNCTION EXPRESSION
+// вызов функции
 
-  // тут объяви функцию как FUNCTION EXPRESSION
+// используй эти консоли для проверки своего кода
 
+// console.log(checkTheWord("Than fly to others that we know not of?")); // true
 
+// console.log(checkTheWord("Thus conscience does make cowards of us all")); // false
 
-  // ARROW FUNCTION
+// console.log(checkTheWord("And enterprises of great pitch and moment")); // false
 
-  // тут объяви функцию как ARROW FUNCTION
+// console.log(checkTheWord("And lose the name of action")); // true
 
+// ============== 6 ===========================
 
+// Напиши функцию countTestsScore() как FUNCTION EXPRESSION,
 
-  // вызов функции
+// принимающую при вызове все аргументы в виде псевдомассива arguments,
 
-  // используй эти консоли для проверки своего кода
+// Функция суммирует все полученные аргументы, независимо от их количества при вызове.
 
-  // console.log(checkTheWord("Than fly to others that we know not of?")); // true
+// в переменную totalSum и выводит это значение в консоль
 
-  // console.log(checkTheWord("Thus conscience does make cowards of us all")); // false
+// FUNCTION EXPRESSION
 
-  // console.log(checkTheWord("And enterprises of great pitch and moment")); // false
+// тут объяви функцию как FUNCTION EXPRESSION
 
-  // console.log(checkTheWord("And lose the name of action")); // true
+// Вызовы функции для проверки кода
 
+// countTestsScore(16, 22, 23); // укажи результат
 
+// countTestsScore(15, 20, 22, 20); // укажи результат
 
-  // ============== 6 ===========================
+// countTestsScore(14, 19, 21, 20, 23); // укажи результат
 
-  // Напиши функцию countTestsScore() как FUNCTION EXPRESSION,
+// ============== 7 ===========================
 
-  // принимающую при вызове все аргументы в виде псевдомассива arguments,
+// Напиши функцию myNewArrowFunction() как ARROW FUNCTION,
 
-  // Функция суммирует все полученные аргументы, независимо от их количества при вызове.
+// принимающую при вызове все аргументы с помощью ...rest ,
 
-  // в переменную totalSum и выводит это значение в консоль
+// и выводит массив этих аргументов в консоль
 
+// ARROW FUNCTION
 
+// тут объяви функцию как ARROW FUNCTION
 
-  // FUNCTION EXPRESSION
+// Вызовы функции для проверки кода
 
-  // тут объяви функцию как FUNCTION EXPRESSION
+// myNewArrowFunction(1, 2, 3); // укажи результат
 
+// myNewArrowFunction(100, 200, 300, 400, 500); // укажи результат
 
-
-  // Вызовы функции для проверки кода
-
-  // countTestsScore(16, 22, 23); // укажи результат
-
-  // countTestsScore(15, 20, 22, 20); // укажи результат
-
-  // countTestsScore(14, 19, 21, 20, 23); // укажи результат
-
-
-
-  // ============== 7 ===========================
-
-  // Напиши функцию myNewArrowFunction() как ARROW FUNCTION,
-
-  // принимающую при вызове все аргументы с помощью ...rest ,
-
-  // и выводит массив этих аргументов в консоль
-
-
-
-  // ARROW FUNCTION
-
-  // тут объяви функцию как ARROW FUNCTION
-
-
-
-  // Вызовы функции для проверки кода
-
-  // myNewArrowFunction(1, 2, 3); // укажи результат
-
-  // myNewArrowFunction(100, 200, 300, 400, 500); // укажи результат
-
-  //myNewArrowFunction("Js", "Python", "Java", "PHP", "C++"); //укажи результат
+//myNewArrowFunction("Js", "Python", "Java", "PHP", "C++"); //укажи результат;
