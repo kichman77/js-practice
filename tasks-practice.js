@@ -950,6 +950,9 @@
 // ];
 // for (let i = 0; i < test.length; i++){
 //   console.log(test[i]);
+//   for (let k = 0; k < test[i].length; k++){
+//     console.log(test[i][k]);
+//   }
 // }
 
 // 4
@@ -1020,8 +1023,9 @@
 // console.log(results);
 // const removeFromStart = results.splice(0, 2);
 // console.log(removeFromStart);
-// const removeFromEnd = results.splice(8, 3);
+// const removeFromEnd = results.splice(-3);
 // console.log(removeFromEnd);
+// console.log(results);
 
 // // ============== 4 ===============================================
 
@@ -1029,14 +1033,13 @@
 
 // // из измененного массива results из задания 3 (т.е. все задание 3 и массив results должны быть раскомментированы)
 // const partOfResults = results.slice(2, 7);
+
 // console.log(partOfResults);
 
 // // ============== 5 ===============================================
-// const doubleResults = results;
+// const doubleResults = results.slice();
 // console.log(doubleResults);
 // Создай массив doubleResults и скопируй в него все элементы из измененного массива results из задания 3
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // ============== 6 ===============================================
 
 // Перебери массив doubleResults из задания 5
@@ -1048,7 +1051,19 @@
 // В обратной последовательности в обоих случаях
 
 // Выведи в консоль массивы evenResults и oddResults
+// const evenResults = [];
+// const oddResults = [];
 
+// for (let num of doubleResults) {
+//   //console.log(num);
+//   if (num % 2 === 0) {
+// evenResults.unshift(num)
+//   } else {
+//     oddResults.unshift(num)
+//   }
+// }
+// console.log(evenResults);
+// console.log(oddResults);
 // ============== 7 ===============================================
 
 // Объедините массивы oddResults и evenResults из задания 6, записав их в новый массив AllResults
@@ -1056,7 +1071,16 @@
 // Перебери новый массив AllResults и выбери только те элементы массива, которые содержат 1 и запиши эти элементы в новый массив includesOne
 
 // "обрати внимание, что массив includesOne должен содержать элемента с типом number, а не string!
-
+// const AllResults = oddResults.concat(evenResults);
+// console.log(AllResults);
+// const includesOne = [];
+// for (let num of AllResults) {
+//   console.log(num);
+//   if (String(num).includes(1)) {
+// includesOne.push(num)
+//   }
+// }
+// console.log(includesOne);
 // 5
 // ============== 1 ===========================
 
