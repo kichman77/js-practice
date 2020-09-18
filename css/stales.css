@@ -1,0 +1,9 @@
+ul {
+  list-style: none;
+}
+#gallery {
+  display: flex;
+}
+.item_gallery:not(:last-child) {
+  margin-right: 30px;
+}

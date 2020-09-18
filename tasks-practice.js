@@ -1081,7 +1081,7 @@
 //   }
 // }
 // console.log(includesOne);
-// 5
+// 5 
 // ============== 1 ===========================
 
 // Напиши функцию toPassTests как FUNCTION EXPRESSION
