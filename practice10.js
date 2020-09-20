@@ -73,20 +73,20 @@
 // после чего вставит все li за одну операцию в список ul.ingredients.
 // Для создания DOM - узлов используй document.createElement().
 
-const ingredients = ["Картошка", "Грибы", "Чеснок", "Помидоры", "Зелень", "Приправы"];
+// const ingredients = ["Картошка", "Грибы", "Чеснок", "Помидоры", "Зелень", "Приправы"];
 
-const ingredientsList = document.querySelector("#ingredients");
-console.log(ingredientsList);
+// const ingredientsList = document.querySelector("#ingredients");
+// console.log(ingredientsList);
 
-ingredients.forEach((elem) => {
-  // создаем элементы
-  const ingredientItem = document.createElement("li");
-  console.dir(ingredientItem);
-  ingredientItem.textContent = elem;
-  ingredientsList.append(ingredientItem);
-  //console.log(ingredientItem);
-  console.log(elem);
-});
+// ingredients.forEach((elem) => {
+//   // создаем элементы
+//   const ingredientItem = document.createElement("li");
+//   console.dir(ingredientItem);
+//   ingredientItem.textContent = elem;
+//   ingredientsList.append(ingredientItem);
+//   //console.log(ingredientItem);
+//   console.log(elem);
+// });
 
 // --------------------------------------- task 3 ------------------------------------------
 // Напиши скрипт для создания галлереи изображений по массиву данных.
@@ -127,7 +127,7 @@ images.forEach((elem) => {
   const galleryList = list_gallery.children[0];
   console.log(list_gallery.children);
   // galleryList.classList.add("item-gallery");
-  
+
   // galleryList.classList.add("class", "item-gallery");
 });
 // console.log(gallery_item);
