@@ -1,4 +1,4 @@
-ul {
+/* ul {
   list-style: none;
 }
 #gallery {
@@ -6,12 +6,9 @@ ul {
 }
 .item_gallery:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
-
-
-
-/* 
+/*
 
 body.show-modal .backdrop {
   opacity: 1;
@@ -54,3 +51,25 @@ body.show-modal .modal {
   transform: scale(1.1);
   transition: transform 200ms ease-in-out;
 } */
+
+body {
+  display: flex;
+  height: 400vh;
+  position: relative;
+}
+
+.cube {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: brown;
+  margin: 10px;
+  padding: 10px;
+}
+ .circle {
+   width: 10px;
+   height: 10px;
+   background-color: darkblue;
+   position: absolute;
+   transform: translate(-150%, -150%);
+ }
