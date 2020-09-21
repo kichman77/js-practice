@@ -37,14 +37,20 @@ for (let i = 0; i < 10; i++) {
   });
 }
 
-// window.addEventListener('scroll', () => {
-//   // console.log(window.scrollY);
-//   window.scrollY >= 200 && window.scrollY < 210 ? (body.style.background = 'red') :
-//     window.scrollY > 300 && window.scrollY < 310 ?
-//       (body.style.background = 'blue')
-//       : '';
-// });
+window.addEventListener('scroll', () => {
+  // console.log(window.scrollY);
+  window.scrollY >= 200 && window.scrollY < 230 ? (body.style.background = 'teal') :
+    window.scrollY > 300 && window.scrollY < 330 ?
+      (body.style.background = 'blue')
+      : '';
+});
 
-body.addEventListener('click', (e) => {
-  body.innerHTML += `<div class='circle' style="top:${e.clientY}px; left:${e.clientX}px"></div>`
-})
+// body.addEventListener('click', (e) => {
+//   body.innerHTML += `<div class='circle' style="top:${e.clientY}px; left:${e.clientX}px"></div>`
+// })
+
+const box = document.createElement('div');
+box.classList.add('box');
+box.textContent = 'Hello World'
+body.append(box);
+console.log(box);

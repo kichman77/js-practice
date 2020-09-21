@@ -62,14 +62,31 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-  background-color: brown;
+  background-color: olive;
   margin: 10px;
   padding: 10px;
+  border-radius: 20px;
 }
- .circle {
-   width: 10px;
-   height: 10px;
-   background-color: darkblue;
-   position: absolute;
-   transform: translate(-150%, -150%);
- }
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: darkblue;
+  position: absolute;
+  transform: translate(-120%, -120%);
+  border-radius: 10px;
+}
+
+.box {
+  display: block;
+text-align: center;
+  width: 250px;
+  height: 250px;
+  background-color: lime;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 200px;
+  font-size: 35px;
+  padding-top: 130px;
+  padding-left: 15px;
+  border-radius: 10px;
+}
