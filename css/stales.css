@@ -52,7 +52,7 @@ body.show-modal .modal {
   transition: transform 200ms ease-in-out;
 } */
 
-body {
+/* body {
   display: flex;
   height: 400vh;
   position: relative;
@@ -90,3 +90,41 @@ text-align: center;
   padding-left: 15px;
   border-radius: 10px;
 }
+
+img {
+  display: block;
+  align-items: center;
+  width: 250px;
+
+}
+
+.item {
+  list-style: none;
+
+
+
+}
+.btn {
+  padding: 20px;
+} */
+
+/* ---------------------------------- t6 */
+
+/* #validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+.valid {
+  color: green;
+}
+.invalid {
+  color : red;
+} */
