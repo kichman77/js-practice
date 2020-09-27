@@ -128,3 +128,33 @@ img {
 .invalid {
   color : red;
 } */
+
+
+/* img {
+  display: block;
+  margin: 20px auto;
+} */
+.list {
+  color : green;
+  font-style: italic;
+  border: 1px solid;
+}
+.toggle-list {
+  color: brown;
+  font-weight: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
