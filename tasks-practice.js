@@ -1219,10 +1219,10 @@
 // и выводит массив этих аргументов в консоль
 // ARROW FUNCTION
 // тут объяви функцию как ARROW FUNCTION
-const myNewArrowFunction = (...args) => {
-  console.log(args);
-}
-// Вызовы функции для проверки кода
-myNewArrowFunction(1, 2, 3); // укажи результат
-myNewArrowFunction(100, 200, 300, 400, 500); // укажи результат
-myNewArrowFunction("Js", "Python", "Java", "PHP", "C++"); //укажи результат;
+// const myNewArrowFunction = (...args) => {
+//   console.log(args);
+// }
+// // Вызовы функции для проверки кода
+// myNewArrowFunction(1, 2, 3); // укажи результат
+// myNewArrowFunction(100, 200, 300, 400, 500); // укажи результат
+// myNewArrowFunction("Js", "Python", "Java", "PHP", "C++"); //укажи результат;
