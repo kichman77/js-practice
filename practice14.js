@@ -191,50 +191,105 @@
 // start.addEventListener("click", switchColor);
 // stop.addEventListener("click", stopSwitch);
 
-
 // ============================= Таймер ========================
 // const start = document.querySelector('[data-action="start"]');
 // const pause = document.querySelector('[data-action="pause"]');
 // const stop = document.querySelector('[data-action="stop"]');
 // const p = document.querySelector("#event-time");
-// let currentTime;
-// let stopper;
+// p.textContent = `00:00:00`;
+
 // class Timer {
-//   constructor(date) {
-//     this.date = date;
+//   constructor() {
+//     this.isActive = false;
+//     this.startTime = "";
+//     this.currentTime = "";
+//     this.deltaTime = "";
+//     this.startInt = "";
+//     this.pauseTime = "";
+//     this.pauseInt = "";
 //   }
 //   pad(value) {
 //     return String(value).padStart(2, "0");
 //   }
+//   getHours(time) {
+//     return this.pad(Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+//   }
+//   getMinutes(time) {
+//     return this.pad(Math.floor((time % (1000 * 60 * 60)) / (1000 * 60)));
+//   }
+//   getSeconds(time) {
+//     return this.pad(Math.floor((time % (1000 * 60)) / 1000));
+//   }
+//   updateClockFace(time) {
+//     return `${this.getHours(time)}:${this.getMinutes(time)}:${this.getSeconds(time)}`;
+//   }
 //   start() {
-//     let startTime = Date.now();
-//     console.log(startTime);
-//     stopper = setInterval(() => {
-//       currentTime = Date.now() - startTime;
-//       console.log(currentTime);
-//       let hours = this.pad(
-//         Math.floor((currentTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-//       );
-//       let minutes = this.pad(
-//         Math.floor((currentTime % (1000 * 60 * 60)) / (1000 * 60))
-//       );
-//       let seconds = this.pad(Math.floor((currentTime % (1000 * 60)) / 1000));
-//       p.textContent = `${hours}: ${minutes}:  ${seconds}`;
+//     if (this.isActive) return;
+//     this.isActive = true;
+//     this.startTime = Date.now();
+//     console.log("start time", this.startTime);
+
+//     this.startInt = setInterval(() => {
+//       this.currentTime = Date.now();
+//       console.log("current time", this.currentTime);
+//       this.deltaTime = this.currentTime - this.startTime;
+//       p.textContent = this.updateClockFace(this.deltaTime);
 //     }, 1000);
-//     //   if()
+//     console.log("isActive", this.isActive);
+//     if (this.pauseTime > this.startTime) {
+//       this.pauseInt = setInterval(() => {
+//         console.log(this.deltaTime);
+//         p.textContent = this.updateClockFace(this.deltaTime + 1000);
+//       }, 1000);
+//     }
 //   }
 //   pause() {
-//     clearInterval(stopper);
+//     if (this.isActive) {
+//       this.pauseTime = Date.now();
+//       console.log(this.pauseTime);
+//       clearInterval(this.startInt);
+//       this.isActive = false;
+//     }
+//     console.log("isActive", this.isActive);
 //   }
 //   stop() {
-//     clearInterval(stopper);
+//     clearInterval(this.startInt);
 //     p.textContent = `00:00:00`;
+//     this.isActive = false;
+//     console.log("isActive", this.isActive);
 //   }
 // }
-// const timer = new Timer("12");
+// const timer = new Timer();
 // console.log(timer);
 // start.addEventListener("click", timer.start.bind(timer));
 // pause.addEventListener("click", timer.pause.bind(timer));
 // stop.addEventListener("click", timer.stop.bind(timer));
 // //timer.start();
 // //
+
+
+const user = {
+  name: "Igor",
+  email: "",
+}
+fetch("https://jsonplaceholder.typicode.com/users/")
+  .then((res) => res.json())
+  .then((data) => console.log(data));
+let url = "https://jsonplaceholder.typicode.com/users/";
+const options = {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json;charset=utf-8",
+  },
+  body: JSON.stringify(user)
+};
+// -------------------------------------------------
+fetch(url, options)
+  .then((res) => res.json())
+  .then((data) => console.log(data));
+
+console.log("log1");
+setTimeout(() => { console.log(200); }, 200)
+setTimeout(() => {
+  console.log(0);
+}, 0);
