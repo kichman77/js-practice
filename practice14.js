@@ -266,30 +266,30 @@
 // stop.addEventListener("click", timer.stop.bind(timer));
 // //timer.start();
 // //
+// =====================================================================
 
+// const user = {
+//   name: "Igor",
+//   email: "",
+// }
+// fetch("https://jsonplaceholder.typicode.com/users/")
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
+// let url = "https://jsonplaceholder.typicode.com/users/";
+// const options = {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json;charset=utf-8",
+//   },
+//   body: JSON.stringify(user)
+// };
+// // -------------------------------------------------
+// fetch(url, options)
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
 
-const user = {
-  name: "Igor",
-  email: "",
-}
-fetch("https://jsonplaceholder.typicode.com/users/")
-  .then((res) => res.json())
-  .then((data) => console.log(data));
-let url = "https://jsonplaceholder.typicode.com/users/";
-const options = {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json;charset=utf-8",
-  },
-  body: JSON.stringify(user)
-};
-// -------------------------------------------------
-fetch(url, options)
-  .then((res) => res.json())
-  .then((data) => console.log(data));
-
-console.log("log1");
-setTimeout(() => { console.log(200); }, 200)
-setTimeout(() => {
-  console.log(0);
-}, 0);
+// console.log("log1");
+// setTimeout(() => { console.log(200); }, 200)
+// setTimeout(() => {
+//   console.log(0);
+// }, 0);
