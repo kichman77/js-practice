@@ -1,0 +1,27 @@
+/* ----------------------- repeat materials ------------ */
+body {
+  background-color: black;
+  color: wheat;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.wrapper-img {
+  display: none;
+}
+.section-title {
+  font-size: 70px;
+  font-weight: 900;
+  text-align: center;
+  color: green;
+}
+
+ button {
+  display: block;
+  margin: 50px auto;
+  padding: 10 px 20 px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+}

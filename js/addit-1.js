@@ -1,253 +1,53 @@
-// 'use strict'
-// let a;
-// console.log(a);
+// == task-1 ==
+// Объявите две переменные: admin и name.
+// Запишите строку "Джон" в переменную name.
+// Скопируйте значение из переменной name в admin.
+// Выведите на экран значение admin, используя функцию alert(должна показать «Джон»).
 
-// let b = 1;
-// b = 2;
-// console.log(b);
-
-// const c = [1, 2];
-// console.log(c);
-// c.push(3);
-// console.log(c);
-
-// a = 1;
-// b = 2;
-// console.log(a + b);
-// alert("hello world");
-
-// let a = 24;
-// let b = '1';
-// let c = a + Number(b);
-// console.log(c);
-
-// const name = 'Igor';
-// let age = prompt ('введите ваш возраст');
-// console.log(typeof age);
-// // age + age;
-// console.log(typeof age);
-// age = Number(age)
-// const message = 'hello '  + name;
-// console.log(message);
-
-// const newMessage = `my age is ${age}`
-// console.log(newMessage);
-// age = 30;
-// console.log(typeof age);
-
-// let answer = confirm('вам есть 18');
-// console.log(answer);
-// console.log(typeof answer);
-
-// let newquestion = `вы любите js?`;
-// let newAnswer =confirm (newquestion);
-
-// let num = 10;
-// let boolNum = Boolean(num);
-// console.log(boolNum);
-// num = 0;
-// boolNum = Boolean(num);
-// console.log(boolNum);
-// let str = `Igor`;
-// let boolstr = Boolean(str);
-// console.log(boolstr);
-
-// str = ``;
-// boolstr = Boolean(str);
-// console.log(boolstr);
-// str = ` `;
-// boolstr = Boolean(str);
-// console.log(boolstr);
-
-// let isOpen;
-// console.log(isOpen);
-// console.log(typeof isOpen);
-
-// let boolUnd = Boolean(isOpen);
-// console.log(boolUnd);
-// console.log(typeof boolUnd);
-
-// isOpen = null;
-// console.log(isOpen);
-// console.log(typeof isOpen);
-
-// let boolNull = Boolean(isOpen);
-// console.log(boolNull);
-// console.log(typeof boolNull);
-
-// =========== 04.09.======================
-
-// ======= сравнение если / то
-// let vova = {
-//   age : 16,
-//   dad: 'mehanic'
-// }
-// if(vova.age >= 18) {
-//   alert(`Prohodi paren`);
-// }else if (vova.dad === 'deputat'){
-//   alert(`Prohodi paren`);
-
-// }else {
-//   alert('Izvini brat');
-// }
-
-// vova.age >= 18 || vova.dad === `deputat`
-// ? alert('Prohodi paren')
-// : alert('Izvini brat');
-
-// ========= кривой пример/ требует разбора=======
-// const PASSWORD = 'iLovejs'
-// let promt1 = promt('Enter your name: ');
-
-// if(promt1) {
-//   promt === PASSWORD
-//   ? console.log('You"re in')
-//   : console.log('Wrong password!!!)
-// };
-
-// let a = 1;
-// let b = 2;
-// let c = 3;
-
-// if (true) {
-//   c = 4;
-// }
-// console.log(c);
-
-// =========== циклы =================
-
-// let q;
-
-// while (q !== null && q !== '') {
-//   q = prompt ( 'enter youre number: ');
-//   console.log(q);
-// }
-
-// =============== for =================
-// for(let i = 0; i<10; i++) {
-//   console.log(i);
-// }
-// for (let b = 0; b<10;) {
-//   console.log(++b);
-// }
-
-// let ageIgor = 39;
-// let ageOleg = 27;
-// const ageTotal = ageIgor + ageOleg;
-// console.log(ageTotal);
-
-// let radius = 10;
-// let PI = 3.14;
-// const S = PI *(Math.pow(radius, 2 ));
-// console.log(S);
-
-// let name = 'Igor';
-// let age = 39;
-// const group = 24;
-// console.log(`Я ${name}, мне ${age} лет, я учусь на ${group} буткемпе!!!`)
-
-// ============самостоятельный разбор ==========
-// let b = 11;
-// const a = b * 2;
-// console.log(a);
-
-// let age;
-// const myAge = 39;
-// age = myAge;
-// console.log(age);
-
-// let age;
-// console.log(age);
-// age = 14;
-// console.log(age);
-
-// ==== ошибка =====
-// const d = 57;
-// console.log(d);
-
-// const d = 58;
-// console.log(d);
-
-// ======= обращай внимание на сиснтаксические ошибки ====
-// const b = 1155;
-// console.log(b);
-
-// const age = 20;
-// const number = 5.8;
-// console.log(age);
-
-// const war = (number + age)/2;
-// console.log(war);
-
-// const name = 'Mango';
+// let admin;
+// let name;
 // console.log(name);
-// const user = 'Orange'
-// console.log(name,user);
+// name = "Джон";
+// admin = name;
+//  alert(admin);
 
-// let a;
-// console.log(a);
+// == task-2 == //
+// Завдання: Написати програму яка буде перевіряти чи рік народження користувача був високосним
+// Наприклад: 2000, 2004, 2016 - високосні 1998, 2002, 1900 2100 - не високосні
 
-// const b = null;
-// console.log(typeof null);
+// console.log(10 % 3);
+// let year = prompt('введите год');
+// if (year % 4 === 0) {
+//   console.log('высокосный год');
+// } else {
+//   console.log('не высокосный' );
+// }
 
-// const c = 5;
-// console.log(typeof c);
+// == task-3 == //
+// Написати програму де компютер загадає число від 1 до 10 і запропонує
+// користувачу вгадати його Користувач вводить свій варіант і отримує результат(Виграв чи ні)
+// Вивести результат в форматі "Вітаю ви вгадали число (тут варіант компютера)" або "Ви програли,
+// компютер загадав(тут варіант компютера)"
 
-// const d = 'JavaScript is awesome!'
-// console.log(typeof d);
+// let random = Math.ceil(Math.random() * (10 - 1) + 1);
+// console.log(random);
+// let userNumber = +prompt("введите число");
+// console.log(userNumber);
+// alert(`${random}:${userNumber}`);
+// if (userNumber === NaN) {
+//   console.log("введите число");
+// } else {
+//   if (random === userNumber) {
+//     console.log("вы угадали");
+//   } else if (userNumber < 1 || userNumber > 10) {
+//     alert("Введите число от 1 до 10");
 
-// const e = false;
-// console.log(typeof e);
+//   } else {
+//     console.log("не угадали");
+//   }
+// }
 
-// ========== alert and message ======
-
-// const message = 'JavaScript is awesome';
-// console.log(message);
-
-// const name = 'Mango';
-// console.log('My name is', name);
-// alert(name);
-
-// ========= promt and confirm =======
-
-// const isComing = confirm('Piease confirm hotel reservation ');
-// console.log(isComing);
-
-// const hotelName = prompt('Please enter desired  hotel name: ');
-// console.log(hotelName);
-
-// const value = prompt('Please enter a number! ');
-// console.log(typeof value );
-// console.log(value);
-
-// const x = 5;
-// const y = 10;
-// console.log(x + y);
-// console.log(y - x);
-// console.log(y / x);
-// console.log(y * x);
-// console.log(y % x);
-
-// let valeu = 5;
-// valeu += 25;
-// console.log(valeu);
-
-// const valueA = '5';
-// console.log(valueA);
-// console.log(typeof Number(valueA));
-
-// const valueB = 'random string';
-// console.log(Number (valueB));
-// console.log(typeof Number(valueB));
-
-// console.log(Number.parseInt('5px'));
-// console.log(Number.parseInt('qwrre'));
-
-// console.log(Number.parseFloat('23.89qewgdw35'));
-
-// const validNumber = Number ('59');
-
-// =========== готовый пример ==========
+// =========== готовый пример задача про доставку ==========
 
 // let delivery = prompt("Укажите страну получателя");
 // console.log(delivery);
@@ -278,7 +78,8 @@
 // ================== пример 2 ==========================
 
 // let message;
-
+// let delivery = prompt("Укажите страну получателя");
+//  let cost;
 // if (delivery === "китай") {
 //   cost = 100;
 //   message = `Доставка в ${delivery} будет стоить ${cost} кредитов`;
@@ -303,25 +104,41 @@
 
 // ============= три примера =================
 
-// let input = confirm('хотите сыграть ?');
+// let input1 = confirm('хотите сыграть ?');
 // //console.log(input);
 // let total = 0;
 
-// while (input) {
+// while (input1) {
 //   console.log('loop is started');
-//   input = prompt('введите число');
-//   if (isNaN(input)) {
+//   input1 = prompt('введите число');
+//   if (isNaN(input1)) {
 //     alert('введите число');
 //     continue;
 //   }
-//   total = total + +input; //tottal += input;
+//   total = total + +input1; //tottal += input;
 
 // }
 // alert(`Общая сумма чисел равна ${total}`);
 
-// let input = confirm('хотите сыграть?');
-// //console.log(input);
-// let total = 0;
+//  let input2 = confirm('хотите сыграть?');
+// console.log(input2);
+// let total2 = 0;
+
+// while (input2) {
+//   console.log('Loop is started');
+//   input2 = prompt('введите число');
+//   if (isNaN(input2)) {
+//     alert('введите число');
+//     continue;
+//   }
+//   total2 = total2 + +input2; //total += input;
+
+// }
+// alert(`Общая сумма чисел равна ${total2}`);
+
+// let input3 = confirm('хотите сыграть?');
+// console.log(input3);
+// let total3 = 0;
 
 // while (input) {
 //   console.log('Loop is started');
@@ -331,85 +148,9 @@
 //     continue;
 //   }
 //   total = total + +input; //total += input;
-
 // }
 // alert(`Общая сумма чисел равна ${total}`);
 
-// let input = confirm('хотите сыграть?');
-// // console.log(input);
-// let total = 0;
-
-// while (input) {
-//   console.log('Loop is started');
-//   input = prompt('введите число');
-//   if (isNaN(input)) {
-//     alert('введите число');
-//     continue;
-//   }
-//   total = total + +input; //total += input;
-// }
-// alert(`Общая сумма чисел равна ${total}`);
-
-// == task-1 ==
-// Объявите две переменные: admin и name.
-// Запишите строку "Джон" в переменную name.
-// Скопируйте значение из переменной name в admin.
-// Выведите на экран значение admin, используя функцию alert(должна показать «Джон»).
-
-// let admin;
-// let name;
-// console.log(name);
-// name = "Джон";
-// admin = name;
-// alert(admin);
-
-// == task-2 == //
-// Завдання: Написати програму яка буде перевіряти чи рік народження користувача був високосним
-// Наприклад: 2000, 2004, 2016 - високосні 1998, 2002, 1900 2100 - не високосні
-
-// console.log(10 % 3);
-// let year = prompt('введите год');
-// if (year % 4 === 0) {
-//   console.log('высокосный год');
-// } else {
-//   console.log('не высокосный' );
-// }
-
-// == task-3 == //
-// Написати програму де компютер загадає число від 1 до 10 і запропонує
-//користувачу вгадати його Користувач вводить свій варіант і отримує результат(Виграв чи ні)
-//Вивести результат в форматі "Вітаю ви вгадали число (тут варіант компютера)" або "Ви програли,
-//компютер загадав(тут варіант компютера)"
-
-//  ================ пример округлений =================
-
-// console.log("ceil", Math.ceil(1.1));
-// console.log("ceil", Math.ceil(1.5));
-// console.log("ceil", Math.ceil(1.9));
-
-// console.log("floor", Math.floor(1.1));
-// console.log("floor", Math.floor(1.5));
-// console.log("floor", Math.floor(1.9));
-
-// console.log("round", Math.round(1.1));
-// console.log("round", Math.round(1.5));
-// console.log("round", Math.round(1.9));
-// let num = 1.945;
-// console.log(typeof num.toFixed());
-
-// let random = Math.ceil(Math.random() * (3 - 1) + 1);
-// console.log(random);
-// let userNumber = +prompt('введите число');
-// console.log(userNumber);
-// if (userNumber === NaN || userNumber === 0) {
-//   console.log('введите число');
-// } else {
-//   if (random === userNumber) {
-//     console.log('вы угадали');
-//   } else {
-//     console.log('не угадали');
-//   }
-// }
 // == task-4 == //
 // Написати програму яка буде знаходити суму, різницю, добуток,
 //частрку двох чисел Користувач вводить 2 числа потім вводить знак операції і отримує результат
@@ -509,7 +250,7 @@
 //   console.log('введите число');
 // }
 
-// == task-9 == //
+// == task-9 == // КАМЕНЬ НОЖНИЦЫ БУМАГА!!!
 // Написати програму яка отримає від користувача число (кількість хвилин)
 //і виведе на екран строку в форматі години і хвилини
 //Приклад 70 покаже 1: 10 450 покаже 7: 30 1441 покаже 24: 1
@@ -566,8 +307,3 @@
 // } else {
 //   console.log(`your choise wrong`);
 // }
-
-
-
-
-
