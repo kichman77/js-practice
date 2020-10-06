@@ -13,6 +13,7 @@ body {
 
 .main-item {
   width: 500px;
+  padding: 30px;
 }
 
 .lightbox {
