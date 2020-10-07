@@ -62,44 +62,114 @@
 //   }
 // }
 
-
 // -----------------------------------------------------------
 // Форма регистрации
-const signUpRefs = {
-  form: document.getElementById("js-form"),
-  inputName: document.getElementById("name"),
-  inputLogin: document.getElementById("login"),
-  inputPassword: document.getElementById("password")
+// const signUpRefs = {
+//   form: document.getElementById("js-form"),
+//   inputName: document.getElementById("name"),
+//   inputLogin: document.getElementById("login"),
+//   inputPassword: document.getElementById("password")
 
-}
-console.log(signUpRefs);
+// }
+// console.log(signUpRefs);
 
-class User{
-  constructor(name,login,password) {
-    this.name = name;
-    this.login = login;
-    this.password = password;
+// class User{
+//   constructor(name,login,password) {
+//     this.name = name;
+//     this.login = login;
+//     this.password = password;
+//   }
+// }
+
+// const users = [];
+// signUpRefs.form.addEventListener("submit", (e) => {
+//   e.preventDefault()
+//   let name = e.currentTarget.elements.name.value;
+//   let login = e.currentTarget.elements.login.value;
+//   let password = e.currentTarget.elements.password.value;
+//   const newUser = new User(name, login, password)
+//   console.log(newUser);
+//   users.push(newUser)
+
+//   e.currentTarget.reset()
+
+// })
+// console.log(users);
+// ----------------------------------------------------------------
+// Product Form
+
+// const productRefs = {
+//   form: document.getElementById("product"),
+//   image: document.getElementById("picture"),
+//   title: document.getElementById("title"),
+//   description: document.getElementById("description"),
+//   price: document.getElementById("price"),
+//   quantity: document.getElementById("quantity"),
+// };
+// class Product {
+//   constructor(image, title, description, price, quantity) {
+//     this.image = image;
+//     this.title = title;
+//     this.description = description;
+//     this.price = price;
+//     this.quantity = quantity;
+//   }
+// }
+
+// const products = [];
+// productRefs.form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let img = e.currentTarget.elements.picture.value;
+//   let title = e.currentTarget.elements.title.value;
+//   let description = e.currentTarget.elements.description.value;
+//   let price = e.currentTarget.elements.price.value;
+//   let quantity = e.currentTarget.elements.quantity.value;
+
+//   console.log(img,title,description,price,quantity);
+
+//   const product = new Product(img, title, description, price, quantity)
+//   console.log(product);
+//   const JSONproduct = JSON.stringify(product);
+//   console.log(JSONproduct);
+//   products.push(JSONproduct)
+
+//   e.currentTarget.reset()
+//   return products
+// })
+// console.log(products);
+// ----------------------------------------------------------------
+const employeeRefs = {
+  form: document.getElementById("employee"),
+  firstName: document.getElementById("firstName"),
+  lastName: document.getElementById("lastName"),
+  age: document.getElementById("age"),
+  email: document.getElementById("email"),
+  phone: document.getElementById("phone"),
+};
+class Employee {
+  constructor(firstName, lastName, age, email, phone) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.email = email;
+    this.phone = phone;
   }
 }
-
-const users = [];
-signUpRefs.form.addEventListener("submit", (e) => {
-  e.preventDefault()
-  let name = e.currentTarget.elements.name.value;
-  let login = e.currentTarget.elements.login.value;
-  let password = e.currentTarget.elements.password.value;
-  const newUser = new User(name, login, password)
-  console.log(newUser);
-  users.push(newUser)
-
-  e.currentTarget.reset()
-
-})
-console.log(users);
-
-
-
-
+const employees = [];
+employeeRefs.form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let frName = e.currentTarget.elements.firstName.value;
+  let lsName = e.currentTarget.elements.lastName.value;
+  let age = e.currentTarget.elements.age.value;
+  let email = e.currentTarget.elements.email.value;
+  let phone = e.currentTarget.elements.phone.value;
+  const employee = new Employee(frName, lsName, age, email, phone)
+  console.log(employee);
+  employees.push(JSON.stringify(employee))
+  e.currentTarget.reset();
+  console.log(employees);
+  return employees
+});
 // --------------------------------------------------------------
 // Localstorage (Andrey)
 
