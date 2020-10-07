@@ -9,32 +9,39 @@
   <body>
     <a href="./index.html">MAIN</a>
 
-    <ul class="photo-gallery">
-      <template>
-        <li>
-          <h2>Раны Гонконга</h2>
-          <img  src="https://www.dw.com/image/53739856_303.jpg" alt="" />
-          <p>
-            Цикл портретов участников протестов против попыток центральной власти в Пекине окончательно прибрать к рукам
-            Гонконг. Первое место.
-          </p>
-          <h3><span>категория: </span> Документальная фотография</h3>
-          <p><span>серия: </span> Раны Гонконга</p>
-          <p><span>фотограф: </span> Чунь Минь Ко</p>
-          <p>(Китай<span> - Гонконг</span>)</p>
-        </li>
-      </template>
-    </ul>
-    <div class="lightbox js-lightbox">
-      <div class="lightbox__overlay"></div>
+    <template>
+      <li>
+        <h2>Раны Гонконга</h2>
+        <img src="https://www.dw.com/image/53739856_303.jpg" alt="" />
+        <p>
+          Цикл портретов участников протестов против попыток центральной власти в Пекине окончательно прибрать к рукам
+          Гонконг. Первое место.
+        </p>
+        <h3><span>категория: </span> Документальная фотография</h3>
+        <p><span>серия: </span> Раны Гонконга</p>
+        <p><span>фотограф: </span> Чунь Минь Ко</p>
+        <p>(Китай<span> - Гонконг</span>)</p>
+      </li>
+    </template>
 
-      <div class="lightbox__content">
-        <img class="lightbox__image" src="#" alt="" />
+    <section class="gallery">
+      
+      <div class="lightbox js-lightbox">
+        <div class="lightbox__overlay"></div>
+
+        <div class="lightbox__content">
+          <img class="lightbox__image" src="#" alt="" />
+        </div>
+
+        <button type="button" class="lightbox__button" data-action="close-lightbox">X</button>
       </div>
 
-      <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
-    </div>
+      <ul class="photo-gallery"></ul>
 
-    <script src="./gallery-repeat.js" type="module"></script>
+    </section>
+
+    <!-- <script src="./gallery-repeat.js" type="module"></script> -->
+    <script src="./js/component-1/index.js" type="module"></script>
+    <script src="./js/component-1/gallery.js" type="module"></script>
   </body>
 </html>

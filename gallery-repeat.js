@@ -6,7 +6,6 @@ const overlay = document.querySelector(".js-lightbox");
 const overlayImage = document.querySelector(".lightbox__image");
 
 const cart = sony_world.map((el, index) => {
-  // console.log(el);
   const title = document.createElement("h2");
   title.textContent = el.title;
 
@@ -40,15 +39,11 @@ const cart = sony_world.map((el, index) => {
 });
 
 galleryList.addEventListener("click", (event) => {
-  // console.log(event.target.src);
   if (event.target.nodeName === "IMG") {
     overlay.classList.add("is-open");
     overlayImage.src = event.target.src;
     overlayImage.dataset.index = event.target.dataset.index;
   }
-  // setNewSrc();
-  // currentIndex = +picture.dataset.index
-  // console.dir(event.target.dataset.index);
 });
 
 overlay.addEventListener("click", clearOverlay);
@@ -65,22 +60,14 @@ window.addEventListener("keydown", (event) => {
   }
 });
 
-// window.addEventListener("keydown", (event) => {
-//   if (event.key === "ArrowLeft") {
-//     picture.src = gallery[currentIndex - 1].image;
-//   }
-// });
-
 function clearOverlay() {
   overlay.classList.remove("is-open");
   overlayImage.src = "";
 }
 
 function setNewSrc(step, index) {
-  // let index = overlayImage.dataset.index
   overlayImage.dataset.index = `${index + step}`;
   overlayImage.src = sony_world[index + step].image;
-  // console.log(overlayImage.src);
 }
 
 function arrowLeft() {
