@@ -227,3 +227,24 @@
 // console.log("round", Math.round(1.9));
 // let num = 1.945;
 // console.log(typeof num.toFixed());
+// -------------------------------------------------------
+// const greeting = function (name, greet) {
+//   console.log(`${greet} в наш куда-то, дорогой ${name}`);
+// }
+// greeting(`Mickue`, `Welcome`);
+// greeting(`Donald Duck`, `Нахрен ты приперся`);
+// greeting(`Vova`, `Не приезжай больше никогда`);
+
+
+// const greeting2 = function (name, greet) {
+//   console.log(`Hi!, my is ${name} ${greet}`);
+// }
+// greeting2(`Ghora`, `I glad to see you!!`)
+
+
+// const greeting3 = function ( name = 'user', greet = 'Hello') {
+//   console.log(`${name} ${greet}`);
+// }
+// greeting3();
+// greeting3(`Igor`);
+// greeting3(undefined, `Hi!!`);
