@@ -171,6 +171,42 @@ toGetForm("Igor", 1234567890, "aa@aaaad.com", 1, 2, 3, 4, 5);
  console.log(userEmail);
 // ----------------------------------------------------------------
 
+class Cats {
+  constructor(whiskers, teeth, tail, claws) {
+    this.whiskers = whiskers;
+    this.teeth = teeth;
+    this.tail = tail;
+    this.claws = claws;
+  }
+  static catsInfo() {
+    console.log(`Every one Cats has mrrrrrrr - engine`)
+  }
+}
+
+const myCat = new Cats(true, true, 1, 16)
+console.log(myCat);
+
+
+
+class Lions extends Cats {
+  constructor(whiskers, teeth, tail, claws, mane) {
+    super(whiskers, teeth, tail, claws, mane);
+    this.mane = mane;
+    this._name = "Jeck";
+  }
+  get name() {
+    console.log(this._name);
+  }
+  set name(name) {
+    console.log(this._name = name);
+  }
+}
+
+let jack = new Lions(true, true, true, true,true)
+console.log(jack);
+
+jack.name;
+jack.name = 'Jack';
 
 
 
