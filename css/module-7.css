@@ -1,0 +1,57 @@
+/* ----------------------- repeat materials ------------ */
+body {
+  background-color: black;
+  color: wheat;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+ul {
+  list-style: none;
+}
+.wrapper-img {
+  display: none;
+}
+.section-title {
+  font-size: 70px;
+  font-weight: 900;
+  text-align: center;
+  color: green;
+}
+
+button {
+  display: block;
+  margin: 50px auto;
+  padding: 10 px 20 px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+/* ------------------------ hw - 7 ----------------- */
+#controls,
+#counter {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.controls-btn,
+.counter-btn {
+  margin: 15px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+#controls{
+  margin: 0;
+}

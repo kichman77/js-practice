@@ -1,7 +1,7 @@
 // // Localstorage
 // --------------------------------------------------------------
 
-// Фщрма отзыва//
+// Форма отзыва//
 // const form = document.querySelector(".js-feedback-form");
 // const textarea = document.querySelector("#exampleMessage");
 // const nameInput = document.querySelector("#exampleNameInput");

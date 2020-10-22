@@ -1,6 +1,24 @@
-// ========================== hw - 6 ========================
+                   //  ФУНКЦИОНАЛЬНЫЕ МЕТОДЫ МАССИВОВ
+// array.reduce((acc, element, idx, array)=>{}, 0||{}||[]) - что угодно
 
-import users from "./users.js";
+//      .map   (( - , element, idx, array)=>{}) - []
+
+//      .filter(( - , element, idx, array)=>{}) - []
+//      .find  (( - , element, idx, array)=>{}) - element
+
+//     .forEach(( - , element, idx, array)=>{}) - ничего, замена цикла for()
+
+//      .some  (( - , element, idx, array)=>{}) - true, если хотя бы один элемент соответствует условию
+//      .every (( - , element, idx, array)=>{}) - true, если все соответствуют
+
+//      .sort  ((a, b)=> a - b) - сортирует от меньшего к большему
+//      .sort  ((a, b)=> b - a) - от большего к меньшему
+//      .sort()                 - в алфавитном порядке
+//      .sort().reverse()       - в обратном алфавитному порядку
+
+// ========================== hw - 6 ======================================
+
+import users from "../../data/users.js";
 console.log(users);
 
 // ---------------------- task - 1 -----------------------------------
@@ -39,6 +57,7 @@ console.log(getUsersWithGender(users, "female"));
 // ------------------------------------ task - 4 -----------------------------------
 
 //Получить массив только неактивных пользователей (поле isActive).
+
 const getInactiveUsers = (users) => {
   return users.filter((user) => !user.isActive);
 };
@@ -58,6 +77,7 @@ console.log(getUserWithEmail(users, "elmahead@omatom.com")); // {объект п
 
 // -------------------------------------- task - 6 ---------------------------------------------
 //Получить массив пользователей попадающих в возрастную категорию от min до max лет (поле age).
+
 const getUsersWithAge = (users, min, max) => {
   return users.filter((user) => user.age > min && user.age < max);
 };
@@ -103,7 +123,6 @@ console.log(getNamesSortedByFriendsCount(users));
 //Получить массив всех умений всех пользователей (поле skills), при этом не должно быть повторяющихся умений и они должны быть отсортированы в алфавитном порядке.
 
 const getSortedUniqueSkills = (users) => {
-  //  return users.reduce((total, user) => total + user.balance, 0);
   return users
     .reduce((array, user) => {
       array.push(...user.skills);
