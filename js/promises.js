@@ -1,4 +1,4 @@
-// ======================= Промисы ================================
+// ======================= Promise ================================
 
 // let promise = new Promise(function (resolve, reject){
 //   setTimeout(() => resolve('done'), 1000);
@@ -19,7 +19,7 @@
 // })
 // console.log(promise);
 
-// ==============================then==========================
+// ========================= then ==========================
 // let promise = new Promise(function (resolve, reject) {
 //   setTimeout(()=> resolve(0), 1000);
 // })
@@ -28,7 +28,7 @@
 //   .then(number => number * 10)
 //   .then(currentCount => console.log(currentCount));
 
-// ==========================catch===========================
+// ======================== catch ===========================
 
 // let isDone = !true;
 
@@ -45,7 +45,7 @@
 //   .then(data => document.querySelector('body').innerHTML =data)
 //   .catch(err => document.querySelector('body').innerHTML = err);
 
-// ========================finally=================================
+// ======================== finally =================================
 
 // new Promise((res, rej) => {
 //   setTimeout(() => res('result'), 2000)
@@ -97,4 +97,85 @@
 //     return user
 //   })
 //   .then((elem) => console.log(elem))
+
+// =========================== Promise ===================================
+
+// function delay(ms) {
+//   return new Promise(function (reselve, reject) {
+//     setTimeout(()=> {
+//       reselve()
+//     }, ms)
+//   })
+
+// }
+// delay(3000).then((ms) => alert("выполнилось через 3 секунды"));
+
+// ======================== Promise.race ===================================
+// let ferrari = new Promise((res,rej)=> {
+//   const t = 0;
+//   setTimeout(() => {
+//     res({ car: "ferrari", t }, t);
+//   })
+// })
+
+// let lambo = new Promise((res, rej) => {
+//   const t = 600;
+//   setTimeout(() => {
+//     res({ car: "lambo", t }, t);
+//   });
+// });
+
+// let bmw = new Promise((res, rej) => {
+//   const t = 600;
+//   // setTimeout(() => {
+//     res({ car: "bmw", t }, t);
+//   // });
+// });
+
+// const firstOnFinish = Promise.race([ferrari, lambo, bmw])
+// console.log(firstOnFinish);
+
+// ========================== Promise.all =====================================
+
+// let ferrari = new Promise((res, rej) => {
+//   const t = 1100;
+//   setTimeout(() => {
+//     res({ car: "ferrari", t }, t);
+//     console.log("1");
+//   });
+// });
+
+// let lambo = new Promise((res, rej) => {
+//   const t = 1600;
+//   setTimeout(() => {
+//     res({ car: "lambo", t }, t);
+//     console.log("2");
+//   });
+// });
+
+// let bmw = new Promise((res, rej) => {
+//   const t = 2600;
+//   setTimeout(() => {
+//     // res({ car: "bmw", t }, t); - undefined
+//     console.log("3");
+//   });
+// });
+
+// const firstOnFinish = Promise.all([ferrari, lambo, bmw]);
+// console.log(firstOnFinish);
+
+// =============================== fetch ==============================
+// const getCurrentcyInfo = function (str) {
+//   document.querySelector('div').innerHTML = `<h1>Loading</h1>`
+
+//   fetch(str)
+//     .then((data) => data.json())
+//     // .then((data) => console.log(data))
+//     .then(data => data.map(el => {
+//       document.body.innerHTML += `<p><h3>Валюта ${el.ccy}</h3></p><h3>Покупка ${el.buy}</h3><p><h3>Продажа ${el.sale}</h3></p>`;
+//     }))
+//     .finally(() => document.querySelector('div').innerHTML = '');
+// }
+// getCurrentcyInfo("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5");
+
 
