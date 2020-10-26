@@ -1,25 +1,27 @@
-// ======================= Promise ================================
+// ======================= Promise ==================================
 
 // let promise = new Promise(function (resolve, reject){
 //   setTimeout(() => resolve('done'), 1000);
 // })
-// console.log(promise);
+// console.log(promise.then((res) => {
+//   console.log(res);
+// }));
 
 // эмуляция ошибки!!!
 
-// let promise = new Promise(function (resolve, reject) {
+// let promise1 = new Promise(function (resolve, reject) {
 //   setTimeout(() => reject(new Error('Whoops!!')), 1000)
 // });
-// console.log(promise);
+// console.log(promise1);
 
-//пустой resolve = undefined!!!!
+// // пустой resolve = undefined!!!!
 
-// let promise = new Promise(function (resolve, reject){
+// let promise2 = new Promise(function (resolve, reject){
 //   setTimeout(() => resolve(), 1000);
 // })
-// console.log(promise);
+// console.log(promise2);
 
-// ========================= then ==========================
+// ========================= then ==================================
 // let promise = new Promise(function (resolve, reject) {
 //   setTimeout(()=> resolve(0), 1000);
 // })
@@ -28,7 +30,7 @@
 //   .then(number => number * 10)
 //   .then(currentCount => console.log(currentCount));
 
-// ======================== catch ===========================
+// ======================== catch ===================================
 
 // let isDone = !true;
 
@@ -45,7 +47,7 @@
 //   .then(data => document.querySelector('body').innerHTML =data)
 //   .catch(err => document.querySelector('body').innerHTML = err);
 
-// ======================== finally =================================
+// ======================== finally ================================
 
 // new Promise((res, rej) => {
 //   setTimeout(() => res('result'), 2000)
@@ -74,9 +76,9 @@
 //   (img) => alert(`успешная загрузка ${img.src}`),
 //   (error) => alert(`ошибка загрузки ${error.message}`)
 // );
-// ======================= praktice ==========================
+// ======================= praktice ================================
 
-             // поиск user в базе данных//
+// поиск user в базе данных//
 
 // let URL = "https://jsonplaceholder.typicode.com/users";
 // let user = fetch(URL)
@@ -98,7 +100,7 @@
 //   })
 //   .then((elem) => console.log(elem))
 
-// =========================== Promise ===================================
+// =========================== Promise ==============================
 
 // function delay(ms) {
 //   return new Promise(function (reselve, reject) {
@@ -110,7 +112,8 @@
 // }
 // delay(3000).then((ms) => alert("выполнилось через 3 секунды"));
 
-// ======================== Promise.race ===================================
+// ======================== Promise.race ===========================
+
 // let ferrari = new Promise((res,rej)=> {
 //   const t = 0;
 //   setTimeout(() => {
@@ -135,7 +138,7 @@
 // const firstOnFinish = Promise.race([ferrari, lambo, bmw])
 // console.log(firstOnFinish);
 
-// ========================== Promise.all =====================================
+// ========================== Promise.all =============================
 
 // let ferrari = new Promise((res, rej) => {
 //   const t = 1100;
@@ -165,6 +168,7 @@
 // console.log(firstOnFinish);
 
 // =============================== fetch ==============================
+
 // const getCurrentcyInfo = function (str) {
 //   document.querySelector('div').innerHTML = `<h1>Loading</h1>`
 
@@ -178,4 +182,37 @@
 // }
 // getCurrentcyInfo("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5");
 
+// --------------------------------------------------------------------
 
+const key = '17634856-dc2baf9a621a1f19c64e21778';
+const url = `https://pixabay.com/api/?key=${key}&q=yellow+flowers&image_type=photo`;
+
+function getFetch(){
+ return fetch(url)
+  .then(res => res.json())
+  .then(data => {
+    console.log(data);
+    return data.hits;
+  })
+  .then(hits => {
+    console.log(hits);
+    hits.map((el) => {
+      let img = document.createElement('img');
+      img.src = el.previewURL;
+      document.querySelector('body').insertAdjacentElement('afterbegin', img);
+    })
+  });
+}
+getFetch()
+
+async function toGetFetch() {
+  let res = await fetch(url);
+  let data = await res.json();
+  console.log(data);
+  data.hits.map(el => {
+    let img = document.createElement('img');
+    img.src = el.previewURL;
+    document.querySelector('body').insertAdjacentElement('afterbegin', img);
+  });
+}
+toGetFetch();
